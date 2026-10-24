@@ -1,5 +1,5 @@
 // Base de datos completa de Psicoanálisis II (Melanie Klein & Donald Winnicott)
-// Basado fielmente en el documento de cátedra de Melanie Leyton Blanche - Solemne II
+// Contenidos rigurosos basados en la cátedra de Melanie Leyton Blanche - Solemne II
 
 const MODULES_DATA = [
   {
@@ -36,46 +36,47 @@ const MODULES_DATA = [
   }
 ];
 
+// 36 PREGUNTAS DE SELECCIÓN MÚLTIPLE CON LONGITUDES ESTRICTAMENTE EQUILIBRADAS Y DISTRACTORES ACADÉMICOS DIFÍCILES
 const QUESTIONS_DATA = [
-  // --- MÓDULO 1: KLEIN EDIPO TEMPRANO (Preguntas 1 a 10) ---
+  // --- MÓDULO 1: KLEIN EDIPO TEMPRANO (10 preguntas) ---
   {
     id: "q1",
     moduleId: "mod1",
     theme: "Melanie Klein",
-    topic: "Discordancias respecto a Freud",
-    question: "¿En qué rango etario sitúa Melanie Klein los estadios tempranos del Complejo de Edipo y la formación temprana del Superyó?",
+    topic: "Discordancias temporales con Freud",
+    question: "¿En qué período del desarrollo infantil sitúa Melanie Klein el origen de los estadios tempranos del Complejo de Edipo?",
     options: [
-      "Entre los 3 y los 5 años, coincidiendo con la fase fálica freudiana.",
-      "Entre los 6 meses y los 3 años, como consolidación de procesos originados con anterioridad.",
-      "Exclusivamente durante la pubertad como resignificación a posteriori.",
-      "A partir del segundo mes de vida, antes de cualquier relación con el pecho materno."
+      "Entre los 3 y los 5 años, como resultado del sepultamiento de las pulsiones pregenitales.",
+      "Entre los 6 meses y los 3 años, como consolidación de procesos originados previamente.",
+      "Durante la fase de latencia, mediante la resignificación retroactiva de la escena primaria.",
+      "A partir del segundo año de vida, tras consolidarse la prohibición explícita de la ley paterna."
     ],
     correctAnswer: 1,
-    explanation: "A diferencia de Sigmund Freud (que sitúa el Edipo clásico en la fase fálica, entre los 3 y 5 años), Klein postula que los estadios tempranos del Complejo de Edipo y la formación del Superyó se originan de manera temprana entre los 6 meses y los 3 años de vida.",
+    explanation: "Klein postula que los estadios tempranos del Edipo y la formación temprana del Superyó se originan entre los 6 meses y los 3 años, distanciándose del marco freudiano clásico que lo ubica entre los 3 y 5 años en la fase fálica.",
     distractorExplanations: [
-      "Los 3 a 5 años corresponden a la teoría clásica freudiana, que Klein busca revisar.",
-      "La pubertad no es el momento fundante del Edipo en la metapsicología kleiniana.",
-      "A los 2 meses aún predomina la posición esquizoparanoide pura sin la integración del objeto total propia del Edipo temprano."
+      "Los 3 a 5 años corresponden a la teoría freudiana clásica, no a la innovación cronológica de Klein.",
+      "La latencia es un período posterior (6 a 11 años) donde el Edipo entra en declive, no donde se origina.",
+      "Para Klein el Edipo temprano no espera al segundo año ni a la ley verbal paterna; surge en la oralidad con el objeto total."
     ]
   },
   {
     id: "q2",
     moduleId: "mod1",
     theme: "Melanie Klein",
-    topic: "Emergencia del Edipo",
-    question: "¿En qué posición del desarrollo psíquico infantil comienza a desarrollarse el Complejo de Edipo temprano según Klein?",
+    topic: "Emergencia y Posición Depresiva",
+    question: "¿Qué transformación en la relación con el objeto posibilita la emergencia del Complejo de Edipo temprano en Klein?",
     options: [
-      "En la posición esquizoparanoide pura, dominada por la escisión del pecho bueno y malo.",
-      "En la posición depresiva, con la integración de la madre como un objeto total y separado.",
-      "En la etapa genital madura del período de latencia escolar.",
-      "En la fase de narcisismo primario absoluto carente de objetos externos."
+      "La escisión radical entre un pecho idealizado eternamente gratificante y un pecho hostil persecutorio.",
+      "La integración de la madre como un objeto total separado, reconociendo la agresión propia y la culpa.",
+      "La declinación definitiva de la posición esquizoparanoide y la supresión total de impulsos agresivos.",
+      "La instauración de la primacía fálica en la niña a través del descubrimiento de la castración anatómica."
     ],
     correctAnswer: 1,
-    explanation: "El Edipo temprano kleiniano emerge en la posición depresiva (alrededor de los 6 meses). Aquí el infante integra a la madre como un 'objeto total' separado e independiente, reconociendo que su propia agresión puede destruirla, lo que despierta culpa y triangulación.",
+    explanation: "El Edipo temprano surge en la posición depresiva: el bebé integra a la madre como objeto total separado e independiente, reconoce que sus ataques destructivos pueden dañarla, experimenta culpa y advierte la relación de pareja entre los padres.",
     distractorExplanations: [
-      "En la posición esquizoparanoide los objetos están totalmente escindidos (parciales: pecho bueno/pecho malo), impidiendo la triangulación con objetos totales.",
-      "El período de latencia ocurre mucho después (6 a 11 años).",
-      "Klein rechaza la noción de narcisismo primario anobjetal; siempre hay relación de objeto desde el inicio."
+      "La escisión tajante de objetos parciales pertenece a la posición esquizoparanoide previa, que impide percibir al objeto total.",
+      "La agresión no se suprime totalmente; se modula por la ambivalencia y la culpa reparatoria, pero sigue operando.",
+      "Klein rechaza la idea freudiana de una primacía fálica inicial obligatoria fundada en el complejo de castración clásico."
     ]
   },
   {
@@ -83,39 +84,39 @@ const QUESTIONS_DATA = [
     moduleId: "mod1",
     theme: "Melanie Klein",
     topic: "Fase Femenina",
-    question: "¿Cómo define Melanie Klein la denominada 'Fase Femenina' del desarrollo infantil?",
+    question: "¿Cómo conceptualiza Melanie Klein la denominada 'Fase Femenina' en la prehistoria del Complejo de Edipo?",
     options: [
-      "Una etapa exclusiva de las niñas caracterizada por la envidia del pene y la rivalidad con el padre.",
-      "Un período transversal tanto en niñas como en niños, previo a la consolidación del psiquismo masculino o femenino, con fines receptivos y de incorporación.",
-      "Una regresión patológica en varones que no logran identificarse con el padre de la horda primitiva.",
-      "La resolución final del Edipo en donde la mujer asume la maternidad y la pasividad social."
+      "Como una fijación patológica de los varones que rechazan la identificación secundaria con el padre.",
+      "Como un período transversal en niños y niñas con fines receptivos e identificación con la madre.",
+      "Como la etapa final exclusiva de la niña tras asumir la resignación pasiva frente a la maternidad.",
+      "Como la organización genital madura en la cual el clítoris desplaza por completo la zona vaginal."
     ],
     correctAnswer: 1,
-    explanation: "Klein conceptualiza la 'Fase femenina' como un momento transversal para ambos sexos, previo a la consolidación del psiquismo de género. En ella predominan los fines receptivos e incorporativos orales y una identificación primaria con el objeto materno.",
+    explanation: "Para Klein, la fase femenina es un momento transversal a ambos sexos anterior a la consolidación del psiquismo de género, caracterizado por fines receptivos/incorporativos orales y una identificación primaria con el objeto materno.",
     distractorExplanations: [
-      "No es exclusiva de niñas: Klein subraya expresamente que ocurre en niños y niñas.",
-      "No es una patología ni una regresión, sino una etapa estructural normal del desarrollo temprano.",
-      "No es la resolución edípica final, sino la prehistoria del Edipo temprano."
+      "No es una desviación ni patología en varones, sino un momento constitutivo y universal del psiquismo infantil.",
+      "No es exclusiva de niñas ni representa la resolución edípica final de resignación adulta.",
+      "Klein sostiene que en la niña el clítoris y la vagina coexisten, no que uno elimine al otro de forma simple."
     ]
   },
   {
     id: "q4",
     moduleId: "mod1",
     theme: "Melanie Klein",
-    topic: "El Destete",
-    question: "Según Melanie Klein, ¿cuál es el factor determinante que posibilita que el lactante se aleje del primer objeto (madre) para volcarse hacia el padre?",
+    topic: "Relevancia del Destete",
+    question: "Según Melanie Klein, ¿cuál es el factor primordial que desencadena que el lactante se aleje de la madre y vire hacia el padre?",
     options: [
-      "La intervención prohibitiva de la ley del padre mediante la amenaza de castración real.",
-      "Las frustraciones orales del destete y el odio que este despierta, generando la primera separación.",
-      "La súbita toma de conciencia de la castración anatómica en la niña y la envidia del pene.",
-      "La satisfacción oral perfecta y sin límites brindada por el pecho nutricio."
+      "La amenaza explícita de castración genital articulada por la autoridad del padre en la realidad.",
+      "Las intensas frustraciones orales del destete y el odio que despiertan, fisurando el estado de fusión.",
+      "La súbita envidia del pene experimentada por la niña al comparar anatómicamente ambos sexos.",
+      "La resolución espontánea de las ansiedades persecutorias gracias a la satisfacción nutricia plena."
     ],
     correctAnswer: 1,
-    explanation: "Para Klein, el destete es la primera gran fisura del estado de fusión. Las intensas frustraciones orales y el odio reactivo que este despierta generan sadismo y ansiedades persecutorias que impulsan al infante a buscar un objeto alternativo: el padre.",
+    explanation: "El destete rompe la fusión primaria con la madre. Las frustraciones orales y el odio reactivo despiertan sadismo y ansiedades persecutorias que impulsan al infante a buscar un objeto alternativo compensatorio en el padre.",
     distractorExplanations: [
-      "La ley paterna prohibitiva es la explicación freudiana/lacaniana clásica, no el motor kleiniano oral primario.",
-      "Klein descarta que el viraje de la niña sea por envidia del pene en primera instancia; la causa primordial es la privación oral del destete.",
-      "Una satisfacción sin frustración no promovería el alejamiento ni la búsqueda de un nuevo objeto compensatorio."
+      "La amenaza de castración paterna es la tesis freudiana clásica, no el motor oral primario postulado por Klein.",
+      "Klein refuta que el viraje hacia el padre en la niña sea producto inicial de la envidia anatómica del pene.",
+      "La satisfacción nutricia sin frustración mantendría la fusión con el pecho, en vez de obligar al alejamiento hacia un tercero."
     ]
   },
   {
@@ -123,19 +124,19 @@ const QUESTIONS_DATA = [
     moduleId: "mod1",
     theme: "Melanie Klein",
     topic: "Cambio de Objeto",
-    question: "¿Cómo se concibe el viraje del bebé hacia el pene paterno tras las frustraciones del destete?",
+    question: "¿Qué estatuto adquiere el pene paterno en el proceso de cambio de objeto analizado por Melanie Klein?",
     options: [
-      "Como un objeto de deseo oral alternativo para equilibrar y disipar las angustias persecutorias.",
-      "Como un objeto fálico de sumisión masoquista derivado del complejo de castración clásico.",
-      "Como una alianza consciente con el padre para destruir físicamente a la madre real.",
-      "Como una defensa obsesiva tardía frente a las exigencias del superyó punitivo."
+      "Un objeto fálico de sumisión masoquista derivado del terror a la castración promulgado por la ley.",
+      "Un objeto de deseo oral alternativo para mitigar y equilibrar las angustias persecutorias maternas.",
+      "Un símbolo cultural abstracto desprovisto de catexis libidinal hasta la entrada a la pubertad.",
+      "Una representación exclusiva del superyó maduro desligada de las tendencias pulsionales arcaicas."
     ],
-    correctAnswer: 0,
-    explanation: "El cambio de objeto NO es motivado originalmente por envidia fálica. Las ansiedades persecutorias y depresivas llevan al bebé a desplazar sus intereses orales hacia el pene del padre, convirtiéndolo en un objeto de gratificación y deseo oral alternativo.",
+    correctAnswer: 1,
+    explanation: "El cambio de objeto no es motivado por envidia del pene, sino por la necesidad de equilibrar las angustias persecutorias y depresivas tras el destete, convirtiendo al pene del padre en un objeto de deseo oral alternativo.",
     distractorExplanations: [
-      "No es una sumisión pasiva fálica-masoquista freudiana, sino un relevo libidinal en el plano de la oralidad.",
-      "No es una conspiración consciente, sino fantasías inconscientes de apaciguamiento de la angustia.",
-      "No es tardío ni obsesivo; ocurre en las fases arcaicas del primer año de vida."
+      "No es una sumisión masoquista fálica a la castración freudiana, sino un relevo libidinal en el registro oral.",
+      "No carece de catexis corporal; está intensamente investido de fantasías orales de incorporación en el primer año.",
+      "No está desligado de las pulsiones arcaicas; surge precisamente en el seno de la fase oral-sádica."
     ]
   },
   {
@@ -143,39 +144,39 @@ const QUESTIONS_DATA = [
     moduleId: "mod1",
     theme: "Melanie Klein",
     topic: "Diferencia entre Celos y Envidia",
-    question: "¿Cuál es la distinción teórica fundamental que establece Melanie Klein entre Celos y Envidia?",
+    question: "¿Qué diferencia estructural y clínica establece Melanie Klein entre los Celos y la Envidia?",
     options: [
-      "Los celos son una vivencia díada arcaica, mientras que la envidia requiere siempre de tres personas.",
-      "Los celos son el miedo a perder el amor del objeto total por un tercero total; la envidia es la frustración por sentirse privado de lo bueno que contiene el objeto.",
-      "La envidia busca proteger y reparar al objeto amado, mientras que los celos buscan únicamente devorarlo.",
-      "Los celos surgen del destete y la envidia surge con la entrada al complejo de castración fálico."
+      "Los celos constituyen una vivencia diádica arcaica, mientras que la envidia demanda una estructura triangular.",
+      "Los celos temen perder el amor del objeto total ante un tercero; la envidia ataca lo bueno que el objeto retiene.",
+      "Los celos buscan vaciar y arruinar al objeto amado, mientras que la envidia intenta protegerlo mediante reparación.",
+      "Los celos derivan exclusivamente de la fase anal, mientras que la envidia nace en la etapa genital madura."
     ],
     correctAnswer: 1,
-    explanation: "Klein distingue rigurosamente: los celos implican una relación triangular con 'objetos totales' (miedo de que un tercero me arrebate el amor del otro y quedar desamparado); la envidia es más primitiva, díada, y surge de la privación de lo bueno que la madre retiene (pechos, leche, bebés, pene).",
+    explanation: "Los celos son triangulares y conciernen a objetos totales (miedo de perder el amor ante un rival y quedar en desamparo); la envidia es más arcaica, diádica, y nace de la frustración por la privación de lo bueno que la madre contiene.",
     distractorExplanations: [
-      "Es al revés: la envidia es diádica y arcaica, mientras que los celos son triangulares.",
-      "La envidia nunca repara: ataca y corrompe lo bueno para despojarlo o arruinarlo.",
-      "Ambos afectos tienen raíces tempranas, pero la envidia es la más arcaica ligada al pecho y los celos se consolidan en la triangulación del objeto total."
+      "Es una inversión teórica: la envidia es diádica y arcaica, mientras que los celos exigen tres objetos totales.",
+      "La envidia nunca repara ni protege; por definición ataca y despoja lo bueno del objeto primario.",
+      "Ambos afectos tienen raíces tempranas, pero la envidia se asienta primordialmente en la fase oral-sádica inicial."
     ]
   },
   {
     id: "q7",
     moduleId: "mod1",
     theme: "Melanie Klein",
-    topic: "Pulsión Epistemofílica",
-    question: "En la teoría kleiniana, ¿con qué dinamismo pulsional se articula primariamente la curiosidad y la pulsión epistemofílica (el deseo de saber)?",
+    topic: "Pulsión Epistemofílica y Agresión",
+    question: "¿Cómo fundamenta Klein la conexión originaria entre la pulsión epistemofílica y el sadismo infantil?",
     options: [
-      "Con la pulsión de autoconservación y el principio de realidad secundario.",
-      "Con la agresión y el sadismo: el deseo de abrirse paso en el cuerpo materno, descubrir sus contenidos y apropiarse de ellos.",
-      "Con la sublimación desexualizada pura exenta de conflicto agresivo.",
-      "Con el temor consciente a los castigos impuestos por las normas escolares de la época."
+      "El deseo de saber proviene del esfuerzo adaptativo del Yo secundario para dominar la realidad externa.",
+      "El conocimiento surge de la fantasía sádica de abrirse paso en el cuerpo materno y saquear sus secretos.",
+      "La curiosidad nace de la identificación desexualizada con los preceptos de aprendizaje escolar formal.",
+      "El investigar constituye una defensa puramente maníaca contra los sentimientos de culpa depresiva."
     ],
     correctAnswer: 1,
-    explanation: "Klein postula que el conocimiento y el saber tienen una raíz agresiva-sádica: investigar y aprender provienen de la fantasía de abrirse paso en el cuerpo materno, descomponer, cortar, desarmar y adueñarse de sus riquezas internas.",
+    explanation: "Klein afirma que estudiar y conocer conllevan descomponer, cortar y desarmar, articulándose con la fantasía sádica inconsciente de forzar la entrada al cuerpo de la madre para descubrir y apropiarse de sus contenidos retenidos.",
     distractorExplanations: [
-      "No es un cálculo adaptativo neutro de autoconservación; está profundamente cargada de impulsos orales y anales sádicos.",
-      "Para Klein la pulsión de saber no nace 'pura' ni desexualizada, sino de mociones canibalísticas y sádicas.",
-      "El origen es inconsciente e intrauterino/corporal primitivo, muy anterior a la educación formal."
+      "No es una función neutra y desexualizada del Yo secundario adaptativo, sino una moción ligada a pulsiones arcaicas.",
+      "El origen es inconsciente y corporal arcaico, mucho anterior a la escolarización y normas pedagógicas.",
+      "Aunque puede vincularse a defensas, su raíz estructural primaria es la agresión investigativa sádico-oral y sádico-anal."
     ]
   },
   {
@@ -183,243 +184,243 @@ const QUESTIONS_DATA = [
     moduleId: "mod1",
     theme: "Melanie Klein",
     topic: "Inhibición del Aprendizaje",
-    question: "¿Qué consecuencia clínica puede acarrear el despliegue incontrolado de la agresividad hacia el cuerpo de la madre en relación con la pulsión epistemofílica?",
+    question: "¿Por qué un despliegue incontrolado de la agresividad hacia la madre puede provocar inhibiciones intelectuales?",
     options: [
-      "Un desarrollo intelectual precoz y brillante que anula todo tipo de neurosis.",
-      "Inhibiciones severas del aprendizaje y de la sexualidad, como defensa frente al peligro que despierta la curiosidad agresiva.",
-      "La disolución completa de los sentimientos de culpa y de las ansiedades depresivas.",
-      "La fijación permanente en una identificación pasiva sin actividad fantasmática."
+      "Porque el superyó maduro destruye la memoria de trabajo impidiendo la asimilación de conceptos.",
+      "Porque investigar es fantaseado como un ataque sádico peligroso, inhibiéndose el saber como defensa.",
+      "Porque el niño renuncia al pensamiento abstracto para regresar al narcisismo primario sin objetos.",
+      "Porque la libido se desplaza enteramente hacia la musculatura motora suprimiendo la actividad psíquica."
     ],
     correctAnswer: 1,
-    explanation: "Si la agresión fantaseada hacia el vientre materno suscita una culpa o angustia persecutoria intolerable, el niño puede inhibir el deseo de investigar y saber (inhibición cognitiva/escolar) para defenderse de la peligrosidad destructiva asociada al acto de indagar.",
+    explanation: "Si el deseo de conocer está fuertemente anudado a la destrucción del vientre materno, el acto de aprender despierta un terror persecutorio y culpa intolerable; en consecuencia, el Yo inhibe el aprendizaje como autodefensa frente al peligro de saber.",
     distractorExplanations: [
-      "No estimula la brillantez; al contrario, bloquea y paraliza la capacidad de estudiar y aprender.",
-      "No anula la culpa, sino que la inhibición es un síntoma defensivo ante la culpa devastadora.",
-      "La vida fantasmática se intensifica y aterroriza al infante, no desaparece."
+      "La causa no es un deterioro neuropsicológico de la memoria, sino una dinámica afectiva de terror a la propia destructividad.",
+      "Klein no postula un regreso a un narcisismo anobjetal; el conflicto siempre concierne a objetos y fantasías activas.",
+      "No es un fenómeno puramente muscular motor; se trata de una parálisis inhibitoria de la pulsión epistemofílica."
     ]
   },
   {
     id: "q9",
     moduleId: "mod1",
     theme: "Melanie Klein",
-    topic: "Objeto Combinado",
-    question: "¿Qué es la figura del 'Objeto Combinado' descripta por Melanie Klein en la escena primaria temprana?",
+    topic: "Objeto Combinado y Escena Primaria",
+    question: "¿Qué describe Melanie Klein bajo la figura del 'Objeto Combinado' en las fantasías del Edipo temprano?",
     options: [
-      "La integración armoniosa del pecho bueno y el pecho malo dentro del Yo del bebé.",
-      "La fantasía aterradora de la pareja parental en estado de unión coital continua, donde el pene paterno forma parte de la madre (madre fálica).",
-      "Un objeto transicional que fusiona un osito de peluche con la voz del padre.",
-      "El superyó maduro post-edípico que combina preceptos morales de ambos progenitores."
+      "La internalización armónica de las funciones parentales que guía el desarrollo del Yo ideal maduro.",
+      "La representación aterradora de los padres unidos en un coito sádico continuo formando una madre fálica.",
+      "La síntesis exitosa entre los cuidados nutritivos de la madre y la protección disciplinaria del padre.",
+      "La alianza afectiva que el infante establece con los hermanos para excluir a los adultos del juego."
     ],
     correctAnswer: 1,
-    explanation: "El objeto combinado surge al proyectar la propia agresividad sobre los padres unidos: al no estar diferenciados, el niño fantasea que el padre/pene forma parte de la madre ('madre fálica') en un coito sádico, incesante y terrorífico, origen de pesadillas y delirios persecutorios.",
+    explanation: "El objeto combinado resulta de proyectar la agresividad infantil sobre la pareja parental: al no estar diferenciados, el pene del padre parece incorporado en la madre (madre fálica) en un coito infinito, sádico y persecutorio.",
     distractorExplanations: [
-      "No es una integración armoniosa ni benéfica; es una fantasía monstruosa teñida de agresión y exclusión.",
-      "El objeto transicional es un concepto winnicottiano totalmente distinto.",
-      "No es el superyó pos-edípico pacificado, sino una de las representaciones más persecutorias del psiquismo arcaico."
+      "No es una internalización armónica ni benéfica; es una fantasía sumamente terrorífica y persecutoria.",
+      "No es una síntesis protectora exitosa, sino la base fantasmática de pesadillas infantiles graves y delirios.",
+      "No concierne a los hermanos, sino a la escena primaria parental de la cual el niño se siente celosamente excluido."
     ]
   },
   {
     id: "q10",
     moduleId: "mod1",
     theme: "Melanie Klein",
-    topic: "Fantasía de vaciamiento",
-    question: "¿Mediante qué mociones fantasea el lactante abrirse paso en el cuerpo materno para robar sus contenidos según Klein?",
+    topic: "Fantasías de Robo y Vientre Materno",
+    question: "¿Cuáles son los contenidos que el lactante fantasea robar del vientre materno mediante ataques sádicos?",
     options: [
-      "Mociones sublimadas del lenguaje y de la motricidad fina.",
-      "Mociones anales y orales sádicas: mordiendo, desgarrando y saqueando los pechos, bebés y penes contenidos en ella.",
-      "Mociones contemplativas puramente pasivas basadas en la mirada receptiva.",
-      "Mociones de reparación afectuosa mediante caricias corporales."
+      "Únicamente los suministros lácteos del destete que le fueron arrebatados durante el puerperio.",
+      "Pechos, bebés y penes, concebidos como riquezas que la madre idealizada acapara para sí misma.",
+      "Preceptos morales y normas culturales que la pareja parental le deniega conscientemente al niño.",
+      "La propia capacidad de pensar con coherencia que el padre real le sustrajo violentamente al nacer."
     ],
     correctAnswer: 1,
-    explanation: "Bajo el imperio de la envidia, el infante recurre a fantasías sádico-orales (morder, vaciar) y sádico-anales (expulsar, quemar, corroer, rasgar) para apropiarse de los bienes que la madre retiene en su vientre y su pecho.",
+    explanation: "Bajo la envidia arcaica, la madre es idealizada como un continente omnipotente que alberga todo lo deseable y valioso: los pechos nutricios, los penes paternos y futuros bebés, los cuales el infante desea despojar.",
     distractorExplanations: [
-      "En esta fase arcaica no intervienen el lenguaje refinado ni la sublimación secundaria.",
-      "No es una actitud pasiva contemplativa, sino un asalto activo y voraz.",
-      "La reparación aparece recién tras la culpa depresiva; el ataque envidioso primario es expoliador."
+      "La fantasía no se reduce a la leche líquida; incluye bebés no nacidos y penes acumulados dentro del cuerpo materno.",
+      "Las normas culturales son construcciones simbólicas tardías ajenas a los contenidos corporales fantaseados.",
+      "No se fantasea el robo de la coherencia cognitiva, sino de objetos concretos y biológicos de goce y fertilidad."
     ]
   },
 
-  // --- MÓDULO 2: KLEIN SUPERYÓ Y SEXUALIDAD (Preguntas 11 a 18) ---
+  // --- MÓDULO 2: KLEIN SUPERYÓ Y SEXUALIDAD (8 preguntas) ---
   {
     id: "q11",
     moduleId: "mod2",
     theme: "Melanie Klein",
-    topic: "Superyó temprano: discrepancia con Freud",
-    question: "¿Cuál es la discrepancia crucial entre Klein y Freud respecto a la génesis del Superyó?",
+    topic: "Génesis del Superyó Temprano",
+    question: "¿En qué difiere radicalmente la concepción kleiniana del Superyó con respecto al modelo propuesto por Freud?",
     options: [
-      "Freud creía que el superyó nacía al nacer, mientras que Klein decía que nacía a los 18 años.",
-      "Para Freud el Superyó es heredero y consecuencia del declive del Edipo; para Klein es un proceso independiente, anterior (fase oral-sádica, 1er año).",
-      "Klein afirmaba que el Superyó no contenía ningún elemento agresivo, a diferencia de Freud.",
-      "Para Klein el Superyó solo existe en niñas debido a la envidia del pene."
+      "Para Klein el Superyó nace en la pubertad, mientras que para Freud se estructura al inicio de la fase oral.",
+      "Para Klein es anterior e independiente del Edipo freudiano, formándose en la fase oral-sádica del primer año.",
+      "Para Klein el Superyó es una estructura benevolente que carece por completo de componentes agresivos sádicos.",
+      "Para Klein el Superyó solo se instaura en las mujeres debido a la temprana vivencia de privación genital."
     ],
     correctAnswer: 1,
-    explanation: "Para Freud, el Superyó se instaura tras la disolución del Complejo de Edipo (hacia los 5 años). Klein demuestra clínicamente que el Superyó surge de introyecciones tempranas en la fase oral-sádica (primer año de vida), siendo previo e independiente del Edipo freudiano clásico.",
+    explanation: "Freud concebía al Superyó como el heredero tardío del Complejo de Edipo (hacia los 5 años); Klein demuestra que surge mucho antes, en la fase oral-sádica (primer año), siendo independiente y anterior a la resolución edípica.",
     distractorExplanations: [
-      "Freud jamás sostuvo que el superyó naciera con el parto; lo fechaba en la disolución edípica.",
-      "Klein sostiene todo lo contrario: el superyó temprano es extremadamente cruel y sádico.",
-      "El superyó temprano existe idénticamente en varones y mujeres."
+      "Klein no ubica el superyó en la pubertad; lo ubica en el lactante, invirtiendo la cronología clásica freudiana.",
+      "Klein sostiene todo lo opuesto: el superyó temprano es sumamente sádico, cruel y teñido de pulsión de muerte.",
+      "El superyó temprano surge exactamente en ambos sexos a partir de las introyecciones tempranas de objetos buenos y malos."
     ]
   },
   {
     id: "q12",
     moduleId: "mod2",
     theme: "Melanie Klein",
-    topic: "Severidad del Superyó",
-    question: "¿De dónde proviene la extrema severidad y crueldad del Superyó temprano según Melanie Klein?",
+    topic: "Etiología de la Severidad del Superyó",
+    question: "¿Cuál es el origen de la severidad aterradora que caracteriza al Superyó temprano en la clínica de Klein?",
     options: [
-      "De la violencia real, maltrato y rigor disciplinario ejercido por el padre biológico exterior.",
-      "De las proyecciones de las propias mociones destructivas e impulsos sádicos del niño (cultivo de pulsión de muerte).",
-      "De la falta de nutrientes y vitaminas durante la etapa del amamantamiento.",
-      "De la internalización pasiva de las leyes jurídicas del Estado."
+      "La severidad estricta, autoritaria y punitiva ejercida en la realidad externa por el padre biológico.",
+      "Las proyecciones de las propias mociones agresivas y pulsiones de muerte del niño sobre los objetos.",
+      "La internalización de los mandatos represivos de la sociedad patriarcal transmitidos en el lenguaje.",
+      "Una deficiencia constitucional en la maduración del Yo que le impide percibir el amor de la madre."
     ],
     correctAnswer: 1,
-    explanation: "Klein afirma con contundencia que la severidad del Superyó NO es reflejo de la severidad del padre real, sino el resultado de los propios impulsos destructivos (pulsión de muerte) del sujeto proyectados sobre los objetos introyectados primarios.",
+    explanation: "Klein afirma enfáticamente que la severidad del Superyó no es copia del padre real, sino el producto de proyectar las propias pulsiones destructivas infantiles sobre los objetos que luego son introyectados como castigadores.",
     distractorExplanations: [
-      "El padre real puede ser muy tierno y, sin embargo, el niño poseer un superyó aterrador y sádico.",
-      "La etiología no es biológica-nutricional, sino estrictamente psicodinámica y fantasmática.",
-      "Las leyes jurídicas no operan en el psiquismo de un lactante de meses."
+      "Padres sumamente bondadosos y tolerantes pueden tener hijos con superyós aterradores, demostrando su raíz endógena.",
+      "El lenguaje cultural patriarcal es una mediación secundaria tardía, mientras que el superyó temprano opera en lo arcaico.",
+      "No es un déficit orgánico madurativo, sino una dinámica metapsicológica universal de proyección e introyección pulsional."
     ]
   },
   {
     id: "q13",
     moduleId: "mod2",
     theme: "Melanie Klein",
-    topic: "Núcleo del Superyó",
-    question: "¿Cómo está constituido el núcleo del Superyó temprano en la teoría kleiniana?",
+    topic: "Estructura del Núcleo del Superyó",
+    question: "¿Cómo se compone el núcleo del temprano Superyó según los desarrollos teóricos de Melanie Klein?",
     options: [
-      "Únicamente por preceptos morales civilizados aprendidos en la escuela.",
-      "Por la incorporación de dos tipos de objetos introyectados: objetos malos vengativos y objetos buenos protectores.",
-      "Por un vacío psíquico absoluto hasta el inicio del lenguaje verbal.",
-      "Por el ideal del yo social exclusivamente masculino."
+      "Exclusivamente por las imágenes persecutorias de los objetos malos expulsados al exterior del psiquismo.",
+      "Por la incorporación dual de objetos malos vengativos y objetos buenos que representan tendencias amorosas.",
+      "Por los ideales narcisistas de perfección física construidos durante el estadio del espejo primario.",
+      "Por una instancia neutra de arbitraje cognitivo desligada de los impulsos libidinales y agresivos."
     ],
     correctAnswer: 1,
-    explanation: "El núcleo del superyó temprano alberga tanto los objetos malos castigadores (teñidos por la proyección de impulsos mortíferos) como el objeto bueno introyectado (representante de tendencias amorosas y protectoras). La primacía de lo bueno determinará si el superyó deviene cruel o protector.",
+    explanation: "El núcleo del superyó temprano alberga tanto objetos malos sádicos (teñidos de mociones mortíferas proyectadas) como el objeto bueno introyectado protector; la primacía de lo bueno sobre lo malo determinará su carácter final.",
     distractorExplanations: [
-      "Los preceptos morales civilizados son formaciones secundarias tardías.",
-      "No hay vacío psíquico; la vida fantasmática temprana es sumamente poblada de objetos introyectados.",
-      "No está constituido únicamente por un ideal de género."
+      "El superyó no solo tiene objetos malos; también contiene el objeto bueno introyectado que brinda amparo y amor.",
+      "El estadio del espejo es una categoría de Jacques Lacan, no el eje de la estructuración del superyó en Klein.",
+      "El superyó kleiniano no es una instancia neutra o cognitiva; es un territorio intensamente pulsional y afectivo."
     ]
   },
   {
     id: "q14",
     moduleId: "mod2",
     theme: "Melanie Klein",
-    topic: "Edipo Masculino y Envidia de la Maternidad",
-    question: "¿Qué siente el varón hacia el cuerpo materno en el Edipo temprano y cómo se defiende de ello según Klein?",
+    topic: "Edipo Masculino y Envidia de la Gestación",
+    question: "En el Edipo masculino temprano, ¿qué envidia el niño en la madre y qué mecanismo defensivo edifica?",
     options: [
-      "Indiferencia total hacia el cuerpo de la madre y deseo de devorar al padre.",
-      "Envidia por la capacidad de gestación y maternidad (vientre, bebés, leche); se defiende sobrevalorando narcisistamente el pene y desplazando el deseo al campo intelectual.",
-      "Alivio al constatar que él carece de órganos internos productores de vida.",
-      "Terror exclusivo a la castración física inmediata por parte de la madre armada."
+      "Envidia la fuerza física de la madre; se defiende mediante el retraimiento autista de la realidad objetiva.",
+      "Envidia su capacidad reproductora y vientre; se defiende sobrevalorando el pene y desplazándose al intelecto.",
+      "Envidia el vínculo de la madre con el padre; se defiende identificándose sumisamente con el objeto atacado.",
+      "Envidia la ausencia de genitales externos; se defiende intentando castrarse simbólicamente ante los otros."
     ],
     correctAnswer: 1,
-    explanation: "El niño experimenta intensa envidia hacia el cuerpo materno contenedor de riquezas biológicas. Como defensa, compensa su imposibilidad de gestar desplazando el deseo al campo intelectual (pulsión epistemofílica) y erigiendo una sobrevaloración narcisista del pene con superioridad sobre la mujer.",
+    explanation: "El niño envidia la maternidad, el vientre gestante, los bebés y la leche; para compensar su imposibilidad biológica de concebir, recurre a la pulsión epistemofílica intelectual y a la sobrevaloración narcisista del pene.",
     distractorExplanations: [
-      "El cuerpo de la madre es el foco primordial de deseo, admiración y envidia, no de indiferencia.",
-      "No hay alivio; la privación de la capacidad de gestar es vivida como una falta penosa.",
-      "La amenaza principal para Klein no es la castración física directa freudiana, sino el ataque interno retaliativo a sus órganos."
+      "No es la fuerza motriz lo que despierta su envidia central, sino el poder creador de gestar y dar pecho.",
+      "La identificación sumisa ocurre en otras defensas, pero no explica la arrogancia fálica compensatoria del varón.",
+      "El varón no busca castrarse ante esa envidia, sino ensalzar defensivamente su falo para negar su carencia uterina."
     ]
   },
   {
     id: "q15",
     moduleId: "mod2",
     theme: "Melanie Klein",
-    topic: "Edipo Femenino",
-    question: "A diferencia de Freud, ¿qué propone Klein respecto al punto de partida del complejo de Edipo femenino?",
+    topic: "Edipo Femenino y Refutación a Freud",
+    question: "¿Qué postula Melanie Klein contra la tesis freudiana de una 'masculinidad primaria' en el desarrollo de la niña?",
     options: [
-      "Que la niña debe pasar obligatoriamente por una fase de hombría y masculinidad primaria previa.",
-      "Que la niña no atraviesa por una masculinidad primaria, sino por una fase femenina transversal con conocimiento inconsciente precoz de la vagina.",
-      "Que la niña se desinteresa de la madre desde el primer día y solo ama al padre.",
-      "Que la niña no desarrolla ningún sentimiento de culpa ni superyó."
+      "Que la niña carece de pulsiones sexuales hasta el advenimiento de la menarquía en la pubertad.",
+      "Que no hay masculinidad primaria, existiendo una fase femenina previa con percepción inconsciente de la vagina.",
+      "Que la niña odia al padre de manera inmutable y jamás desplaza su interés hacia el pene paterno.",
+      "Que la niña sólo experimenta celos edípicos cuando se le comunica verbalmente su destino biológico."
     ],
     correctAnswer: 1,
-    explanation: "Klein refuta la tesis freudiana de una 'masculinidad primaria' en la niña. Sostiene que existe una fase femenina temprana transversal y un conocimiento inconsciente innato de la corporalidad vaginal receptiva, con envidia primordial de los contenidos maternos.",
+    explanation: "Klein refuta el postulado freudiano de que la niña empieza siendo un 'pequeño varón': demuestra la existencia de una fase femenina transversal originaria y un saber corporal inconsciente temprano de la vagina receptiva.",
     distractorExplanations: [
-      "La hipótesis de la masculinidad primaria obligatoria es de Freud, la cual Klein combate activamente.",
-      "La madre es el primer objeto de amor absoluto de la niña antes del viraje edípico.",
-      "Klein demuestra que las niñas experimentan intensos sentimientos tempranos de culpa."
+      "Klein jamás afirmó que la sexualidad infantil estuviera ausente; sostiene una vida genital activa desde el primer año.",
+      "La niña sí vuelca su interés hacia el padre y su pene, impulsada por la privación oral y el destete materno.",
+      "Los celos y fantasías tempranas no dependen de explicaciones verbales adultas; se fundan en la vida fantasmática inconsciente."
     ]
   },
   {
     id: "q16",
     moduleId: "mod2",
     theme: "Melanie Klein",
-    topic: "Dificultad específica de la niña",
-    question: "¿Cuál es la dificultad erógena específica que Klein detecta en el desarrollo de la feminidad de la niña?",
+    topic: "Dificultad Genital Específica de la Niña",
+    question: "¿Cuál es el obstáculo particular del desarrollo psicosexual femenino que Klein describe en relación con sus genitales?",
     options: [
-      "La ausencia total de zonas erógenas hasta la edad adulta.",
-      "Poseer dos zonas genitales de igual valoración erótica (clítoris y vagina), lo que obstaculiza la primacía receptiva de esta última.",
-      "La incapacidad absoluta para introyectar el pene paterno en sus fantasías orales.",
-      "La inexistencia de rivalidad con la figura materna."
+      "La ausencia congénita de sensaciones placenteras en los primeros cuatro años de la infancia temprana.",
+      "Poseer dos zonas erógenas de igual valencia (clítoris y vagina), dificultando la primacía receptiva vaginal.",
+      "La fijación compulsiva en la expulsión anal que impide el establecimiento de cualquier ligazón con el padre.",
+      "El rechazo instintivo hacia la figura paterna motivado por el terror a la pérdida del objeto transicional."
     ],
     correctAnswer: 1,
-    explanation: "Una dificultad anatómica y libidinal de la niña pequeña es contar con dos órganos de intensa catexis: el clítoris (activo/fálico) y la vagina (receptiva/interior), lo que complica el asentamiento indiscutido del fin receptivo vaginal.",
+    explanation: "Una dificultad anatómica y libidinal de la niña es contar simultáneamente con el clítoris (activo/fálico) y la vagina (receptiva), complicando la delimitación y consolidación del fin receptivo vaginal hacia el padre.",
     distractorExplanations: [
-      "Existen dos zonas erógenas sumamente activas desde la infancia temprana.",
-      "La niña sí introyecta el pene paterno tempranamente como objeto oral compensatorio del destete.",
-      "La rivalidad y envidia hacia la madre son intensísimas en la niña."
+      "La niña posee una riquísima erogeneidad genital desde muy pequeña, desmintiendo la apatía o insensibilidad.",
+      "Las fijaciones anales existen en ambos sexos, pero no constituyen la encrucijada genital específica clítoris/vagina.",
+      "El objeto transicional es una categoría de Winnicott, ajena al debate anatómico de Klein sobre las dos zonas erógenas."
     ]
   },
   {
     id: "q17",
     moduleId: "mod2",
     theme: "Melanie Klein",
-    topic: "Debilitamiento del deseo de maternidad",
-    question: "En la teoría de Melanie Klein, ¿por qué podría quedar debilitado o inhibido el futuro deseo de maternidad en una mujer?",
+    topic: "Inhibición del Deseo de Maternidad",
+    question: "¿A qué atribuye Melanie Klein el posterior debilitamiento o rechazo del deseo de maternidad en una mujer?",
     options: [
-      "Por no haber completado estudios universitarios formales.",
-      "Por la culpa asociada a los ataques destructivos de robo al cuerpo materno, fantaseando que la madre en retaliación dañó su propio vientre.",
-      "Por un exceso de amor incondicional recibido durante la lactancia sin ninguna frustración.",
-      "Por la total ausencia de pulsión de muerte en su psiquismo infantil."
+      "A la resolución armónica de las fantasías persecutorias que despoja al cuerpo de su carga pulsional.",
+      "A la culpa y miedo a la retaliación de la madre, fantaseando que su propio vientre fue arruinado en venganza.",
+      "Al triunfo incontestado del falso self adaptativo que impone ideales puramente intelectuales y laborales.",
+      "A la introyección exclusiva del padre idealizado como único objeto que brinda garantías de autoconservación."
     ],
     correctAnswer: 1,
-    explanation: "Debido a las fantasías sádicas tempranas de vaciar y destruir el vientre de la madre, la niña teme que la madre arruinada tome represalias ('retaliación') destruyendo sus propios órganos internos reproductivos, inhibiendo el deseo de gestar por culpa y terror persecutorio.",
+    explanation: "Habiendo fantaseado vaciar y destruir el vientre materno, la niña teme la venganza ('retaliación') de la madre perseguidora, alucinando que dañó sus órganos reproductores internos, lo que debilita el deseo de concebir.",
     distractorExplanations: [
-      "Los factores sociales o académicos no son la causa metapsicológica profunda kleiniana.",
-      "La frustración y el odio son universales e intrínsecos al destete en la clínica kleiniana.",
-      "Klein sostiene que la pulsión de muerte es innata y constante en todo ser humano."
+      "La resolución armónica promovería una maternidad reparatoria y plena, en lugar de inhibirla o debilitarla.",
+      "El 'falso self' es un concepto de Winnicott; la explicación kleiniana descansa en la culpa y la retaliación fantasmática.",
+      "La introyección del padre bueno disminuye el terror persecutorio, no produce la inhibición del deseo de maternidad."
     ]
   },
   {
     id: "q18",
     moduleId: "mod2",
     theme: "Melanie Klein",
-    topic: "Culpa Primitiva",
-    question: "¿De qué constatación psíquica emerge la culpa primitiva en la posición depresiva kleiniana?",
+    topic: "Origen de la Culpa Primitiva",
+    question: "¿De qué doloroso reconocimiento psíquico nace la culpa primitiva en la posición depresiva según Klein?",
     options: [
-      "De darse cuenta de que el objeto atacado con odio y sadismo es el mismísimo objeto amado, fuente de vida y protección.",
-      "Del reproche verbal formulado explícitamente por el padre ante una travesura.",
-      "Del descubrimiento de que los padres tienen relaciones sexuales sin permiso del niño.",
-      "De la pérdida del control de esfínteres en el entrenamiento higiénico anal."
+      "De constatar que el objeto atacado con sadismo es el mismo objeto amado y vital que se teme perder.",
+      "Del reproche explícito manifestado por el progenitor real cuando el niño desobedece una orden verbal.",
+      "De la advertencia racional de que la agresividad individual viola los principios del contrato civilizado.",
+      "Del descubrimiento traumático de que el padre posee una fuerza muscular superior a la de la madre."
     ],
     correctAnswer: 0,
-    explanation: "La culpa depresiva primitiva surge cuando el Yo integra el objeto: constata horrorizado que la madre que atacó y mordió con furia voraz es la misma madre buena que ama y necesita para no quedar expuesto al desamparo.",
+    explanation: "La culpa depresiva nace al unificarse el objeto total: el infante comprueba que el pecho y la madre atacados con furia destructiva son idénticos a la fuente nutricia amada, emergiendo el dolor psíquico y el anhelo de reparación.",
     distractorExplanations: [
-      "No proviene del reto verbal del padre externo, sino del dolor intrapsíquico de haber dañado al objeto de amor.",
-      "La escena primaria suscita exclusión y rabia, pero la culpa surge de la agresión contra el objeto total amado.",
-      "El control de esfínteres influye en las modalidades anales, pero el núcleo de la culpa depresiva es la preservación del objeto bueno."
+      "No depende del reproche verbal de los padres reales; surge del conflicto afectivo inconsciente intrapsíquico.",
+      "No es un cálculo racional civilizado secundario; se trata de una angustia desgarradora primaria de desamparo.",
+      "La fuerza muscular relativa de los padres no origina la culpa intrapsíquica frente al objeto amado."
     ]
   },
 
-  // --- MÓDULO 3: WINNICOTT MADURACIÓN Y OBJETO TRANSICIONAL (Preguntas 19 a 28) ---
+  // --- MÓDULO 3: WINNICOTT YO Y OBJETO TRANSICIONAL (10 preguntas) ---
   {
     id: "q19",
     moduleId: "mod3",
     theme: "Donald Winnicott",
-    topic: "Pulsión de muerte y agresividad",
-    question: "¿Cuál es la postura categórica de Donald Winnicott respecto a la 'Pulsión de Muerte' propuesta por Freud y Klein?",
+    topic: "Rechazo de la Pulsión de Muerte",
+    question: "¿Cuál es la posición de Donald Winnicott frente a la hipótesis freudo-kleiniana de la Pulsión de Muerte?",
     options: [
-      "La valida plenamente y la considera el motor central de todas las esquizofrenias tempranas.",
-      "La rechaza: no cree en una fuerza endógena hacia lo inanimado; la agresividad del bebé es expresión de un gesto espontáneo de vitalidad y motilidad.",
-      "Afirma que la pulsión de muerte solo aparece en el adulto anciano.",
-      "Sostiene que la madre inyecta la pulsión de muerte en el bebé a través de la leche materna envenenada."
+      "La asume como el fundamento central e imprescindible para explicar el origen de las psicosis infantiles.",
+      "La rechaza: la agresión temprana es signo de vitalidad motora y gesto espontáneo, no intención de dañar.",
+      "La restringe exclusivamente a las etapas adultas avanzadas cuando las defensas del falso self claudican.",
+      "La acepta únicamente para el período prenatal antes de que la madre configure la barrera anti-estímulo."
     ],
     correctAnswer: 1,
-    explanation: "Winnicott se distancia radicalmente del pesimismo pulsional kleiniano: rechaza la pulsión de muerte. Para él, la agresividad inicial del bebé no conlleva intención destructiva ni maldad innata, sino que es signo de motilidad, gesto espontáneo y apetencia vital.",
+    explanation: "Winnicott no cree en una fuerza endógena que empuje a lo inanimado; afirma que la agresividad inicial del bebé es motilidad pura, expresión vital y gesto espontáneo sin intencionalidad de dañar ni maldad congénita.",
     distractorExplanations: [
-      "Winnicott discrepa abiertamente con Klein en este punto central.",
-      "No es un fenómeno senil; para Winnicott simplemente el concepto no describe la realidad del desarrollo infantil.",
-      "La etiología winnicottiana se basa en fallas de adaptación ambiental, no en sustancias biológicas envenenadas."
+      "Winnicott se opone tajantemente a Klein en este postulado metapsicológico esencial.",
+      "No la restringe a la vejez; simplemente prescinde del constructo teórico de pulsión de muerte en su modelo.",
+      "Tampoco la acepta en la vida intrauterina; subraya la tendencia innata y positiva hacia el desarrollo madurativo."
     ]
   },
   {
@@ -427,79 +428,79 @@ const QUESTIONS_DATA = [
     moduleId: "mod3",
     theme: "Donald Winnicott",
     topic: "Preocupación Maternal Primaria",
-    question: "¿Qué es la 'Preocupación Maternal Primaria' y cuándo se manifiesta?",
+    question: "¿Cómo describe Winnicott el estado psíquico conocido como 'Preocupación Maternal Primaria'?",
     options: [
-      "Una neurosis obsesiva patológica que requiere hospitalización psiquiátrica de la madre.",
-      "Un estado particular de 'locura normal y necesaria' al final del embarazo y primeras semanas de puerperio, con devoción y entrega casi perfecta a las necesidades del bebé.",
-      "El temor fóbico de la madre a transmitir enfermedades bacterianas al infante.",
-      "La educación estricta implementada por la madre durante la etapa del jardín infantil."
+      "Una depresión puerperal severa provocada por la hostilidad inconsciente de la madre hacia el parto.",
+      "Un estado de locura normal y necesaria al final del embarazo y puerperio para sintonizar con el bebé.",
+      "Una organización patológica narcisista que le impide a la mujer separarse físicamente del neonato.",
+      "Una actitud disciplinaria estricta diseñada para acelerar la adaptación del niño a las normas sociales."
     ],
     correctAnswer: 1,
-    explanation: "Winnicott describe la Preocupación Maternal Primaria como un estado psíquico especial de ensimismamiento y sensibilidad extrema (casi un estado disociativo o 'locura normal') que permite a la madre identificarse con su bebé y satisfacer oportunamente sus necesidades corporales y psíquicas.",
+    explanation: "Winnicott define este estado transitorio como una 'locura normal y necesaria' en la que la madre se entrega abnegadamente al cuidado, sintiendo al bebé como parte de sí misma y actuando como su Yo auxiliar protector.",
     distractorExplanations: [
-      "No es una patología; es una condición indispensable de salud para la díada madre-bebé.",
-      "No tiene relación con fobias microbiológicas obsesivas.",
-      "Ocurre en el peri-parto y primeras semanas de vida, no en la edad escolar."
+      "No es una depresión puerperal patológica; es un estado fisiológico y psíquico sano indispensable para el inicio de la vida.",
+      "No es un narcisismo perverso o patológico, sino una condición temporaria de devoción facilitadora.",
+      "No impone disciplinas tempranas aceleradas; al contrario, amortigua el impacto del mundo externo."
     ]
   },
   {
     id: "q21",
     moduleId: "mod3",
     theme: "Donald Winnicott",
-    topic: "Tres Funciones Maternas",
-    question: "¿Cuáles son las tres funciones maternas fundamentales y qué logro del desarrollo facilitan respectivamente?",
+    topic: "Tríada de Funciones Maternas",
+    question: "¿Qué logro evolutivo del infante facilita respectivamente cada una de las tres funciones maternas winnicottianas?",
     options: [
-      "Alimentar (nutrición), Bañar (higiene) y Castigar (disciplina social).",
-      "Sostén (Integración), Manipulación (Personalización/psicosoma) y Presentación del objeto (Iniciación de relaciones objetales).",
-      "Vigilancia (control), Represión (freno pulsional) y Desapego (autonomía prematura).",
-      "Estimulación cognitiva (inteligencia), Aislamiento (calma) y Regulación del sueño."
+      "Sostén promueve la represión; Manipulación la sublimación; Presentación del objeto el complejo de Edipo.",
+      "Sostén permite la Integración; Manipulación la Personalización psicosomática; Presentación las Relaciones objetales.",
+      "Sostén engendra el superyó; Manipulación consolida el falso self; Presentación instaura la pulsión de saber.",
+      "Sostén posibilita el lenguaje verbal; Manipulación la motricidad fina; Presentación la adaptación social."
     ],
     correctAnswer: 1,
-    explanation: "La tríada funcional de Winnicott: 1) Holding (sostén físico/emocional) posibilita la INTEGRACIÓN del Yo; 2) Handling (manipulación y cuidado del cuerpo) posibilita la PERSONALIZACIÓN (habitar el psicosoma); 3) Object Presenting posibilita el contacto con la realidad y las RELACIONES OBJETALES.",
+    explanation: "El Holding (sostén) permite la integración del Yo en el tiempo y espacio; el Handling (manipulación corporal) promueve la personalización (habitar el psicosoma); el Object presenting inaugura las relaciones con los objetos.",
     distractorExplanations: [
-      "Esos son cuidados zootécnicos o conductuales, no las funciones metapsicológicas estructurantes de Winnicott.",
-      "Winnicott advierte contra la intrusión y la exigencia de adaptación precoz.",
-      "La estimulación cognitiva acelerada es ajena al cuidado del Yo arcaico en Winnicott."
+      "Esos son conceptos del psicoanálisis clásico que no corresponden a la tríada metapsicológica de Winnicott.",
+      "El falso self no nace de la manipulación adecuada, sino de las fallas e intrusiones ambientales traumáticas.",
+      "Aunque el lenguaje se desarrolle luego, los logros nucleares primarios descritos por Winnicott son corporales y psicosomáticos."
     ]
   },
   {
     id: "q22",
     moduleId: "mod3",
     theme: "Donald Winnicott",
-    topic: "El Yo al principio",
-    question: "Frente a la pregunta '¿Existe un Yo desde el principio?', ¿cuál es la respuesta de Donald Winnicott?",
+    topic: "El Yo al Comienzo",
+    question: "Frente a la interrogante sobre la existencia del Yo en los albores de la vida, ¿qué postula Donald Winnicott?",
     options: [
-      "Sí, el Yo nace completamente organizado con todas sus defensas desde el parto.",
-      "No; el principio está en el momento en que empieza el Yo. Al inicio hay 'No-integración' y el bebé no existe sin la madre que oficie de Yo auxiliar.",
-      "El Yo es un invento del lenguaje y solo surge a los 7 años de vida.",
-      "El Yo solo existe en el padre, mientras la madre y el hijo son puro Ello biológico."
+      "El Yo existe estructurado desde el parto con mecanismos defensivos de proyección y escisión activos.",
+      "El principio radica en el surgimiento del Yo; inicialmente hay un estado basal de no-integración con la madre.",
+      "El Yo es una estructura ilusoria que jamás se constituye, existiendo únicamente el Ello y el ambiente.",
+      "El Yo solo aparece tras la superación del complejo de destete al finalizar el segundo año cronológico."
     ],
     correctAnswer: 1,
-    explanation: "Winnicott ironiza con su famosa frase: 'No existe tal cosa como un bebé' (siempre hay un bebé con una madre). Al nacer el Yo no viene integrado; emerge gradualmente desde un estado primario de no-integración gracias a la madre como Yo auxiliar.",
+    explanation: "Winnicott objeta dar por sentado un Yo integrado al nacer. Sostiene que 'el principio está en el momento en que empieza el Yo'; en los comienzos reina la No-integración, y el bebé solo existe en unidad con la madre (Yo auxiliar).",
     distractorExplanations: [
-      "Winnicott critica a las corrientes psicoanalíticas que dan por supuesto un Yo ya integrado en los inicios.",
-      "No surge a los 7 años; su integración nuclear se gesta en los primeros meses y años de vida.",
-      "La formulación de un Ello puro sin el sostén materno ignora la función de soporte psicosomático."
+      "Esa es la postura de Melanie Klein (un Yo temprano activo desde el nacimiento), criticada por Winnicott.",
+      "Winnicott sí teoriza la constitución del Yo; no lo considera una ilusión inexistente en la salud.",
+      "La integración yoica no espera al final del segundo año; se va gestando día a día desde las primeras semanas con el holding."
     ]
   },
   {
     id: "q23",
     moduleId: "mod3",
     theme: "Donald Winnicott",
-    topic: "Angustia Inconcebible",
-    question: "¿Cuáles son las vivencias que componen la denominada 'Angustia Inconcebible o Impensable' (materia prima de las psicosis)?",
+    topic: "Angustias Inconcebibles",
+    question: "¿Cuáles son las cuatro vivencias nucleares que constituyen la llamada 'Angustia Inconcebible o Impensable'?",
     options: [
-      "Temor a reprobar un examen, miedo al ridículo y timidez ante extraños.",
-      "Fragmentarse, caer interminablemente, no tener relación con el cuerpo y no tener ninguna orientación.",
-      "Envidia del éxito laboral del padre y celos de los hermanos mayores.",
-      "Preocupación moral por haber pecado contra las normas eclesiásticas."
+      "Sentimiento de culpa, reproche superyoico, miedo al castigo real y terror a la desobediencia moral.",
+      "Fragmentarse, caer interminablemente, carecer de relación con el cuerpo y perder toda orientación.",
+      "Envidia hacia los padres, celos de los hermanos, rivalidad fraterna y temor a perder las posesiones.",
+      "Duda obsesiva, miedo al contagio bacteriano, fobia a los espacios cerrados y timidez social severa."
     ],
     correctAnswer: 1,
-    explanation: "Si el sostén falla, el infante cae en agonías primitivas impensables: 1. Sensación de fragmentarse en pedazos; 2. Sensación de caer en el vacío sin fondo para siempre; 3. Despersonalización (cuerpo ajeno); 4. Pérdida completa de orientación espacio-temporal.",
+    explanation: "Si el sostén falla, el infante se asoma a las agonías impensables (materia prima de las psicosis): fragmentación, caída infinita en el abismo, despersonalización corporal y desorientación total en el espacio.",
     distractorExplanations: [
-      "Esos son temores neuróticos o ansiedades sociales secundarias.",
-      "Los celos y la envidia son conflictos afectivos interpersonales, no catástrofes del ser.",
-      "Las angustias de culpa moral son post-edípicas o depresivas, muy posteriores a las agonías impensables arcaicas."
+      "Esas son ansiedades morales o neuróticas secundarias, no agonías primitivas de disolución existencial.",
+      "Los celos y la envidia son vicisitudes de las relaciones objetales, no catástrofes basales del ser.",
+      "Esos son síntomas neuróticos obsesivos o fóbicos estructurados en personalidades con Yo ya constituido."
     ]
   },
   {
@@ -507,79 +508,79 @@ const QUESTIONS_DATA = [
     moduleId: "mod3",
     theme: "Donald Winnicott",
     topic: "No-integración vs Desintegración",
-    question: "¿Cuál es la diferencia capital entre el estado de 'No-integración' y la 'Desintegración' en Winnicott?",
+    question: "¿Cuál es la diferencia capital que establece Winnicott entre el estado de 'No-integración' y la 'Desintegración'?",
     options: [
-      "La no-integración es una enfermedad psicótica grave; la desintegración es un estado de profunda paz.",
-      "La no-integración es el estado natural y relajado sostenido por la madre; la desintegración es una defensa activa donde el bebé produce caos para defenderse de la angustia inconcebible.",
-      "Ambos términos son sinónimos idénticos utilizados indistintamente por el autor.",
-      "La desintegración ocurre solo durante el sueño de los adultos sanos."
+      "La no-integración es un trastorno esquizofrénico irreversible; la desintegración es el reposo saludable del bebé.",
+      "La no-integración es el reposo natural sostenido por la madre; la desintegración es una defensa activa ante el trauma.",
+      "Ambos estados son fenómenos idénticos y equivalentes que la clínica psicoanalítica emplea indistintamente.",
+      "La no-integración ocurre tras el destete, mientras que la desintegración es un efecto secundario de la dentición."
     ],
     correctAnswer: 1,
-    explanation: "La no-integración es el reposo saludable inicial sostenido por la madre. La desintegración, en cambio, es una defensa organizada y reactiva: ante una falla ambiental intrusiva, el bebé produce caos activamente porque ese caos propio entra dentro de su omnipotencia y es menos aterrador que la agonía impensable.",
+    explanation: "La no-integración es un estado relajado y pacífico posible gracias al sostén materno; la desintegración es una defensa reactiva donde el infante produce activamente caos para evitar la agonía impensable (el caos es suyo y dentro de su omnipotencia).",
     distractorExplanations: [
-      "Es justamente al revés: la no-integración permite descansar; la desintegración es patológica-defensiva.",
-      "No son sinónimos: Winnicott hace un hincapié clínico terminante en su diferencia.",
-      "No se refiere al sueño reparador adulto, sino a una respuesta traumática del infante."
+      "Invierte los términos: la no-integración es sana y tranquila; la desintegración es una respuesta patológica ante la intrusión.",
+      "Winnicott marca una diferencia clínica categórica entre ambas nociones; no son sinónimos.",
+      "No guardan relación con la dentición orgánica, sino con la cualidad facilitadora del ambiente ambiental."
     ]
   },
   {
     id: "q25",
     moduleId: "mod3",
     theme: "Donald Winnicott",
-    topic: "Ilusión y Desilusión gradual",
-    question: "¿Cuál es el rol de la madre en el proceso de Ilusión y posterior Desilusión del lactante?",
+    topic: "Ilusión y Desilusión Gradual",
+    question: "¿Qué función cumple la transición de la ilusión omnipotente hacia la desilusión gradual en el desarrollo infantil?",
     options: [
-      "Frustrar al bebé desde el día uno para que madure con severidad y disciplina.",
-      "Primero sostener la ilusión de omnipotencia (el bebé crea lo que encuentra) y luego desilusionar gradualmente según su tolerancia a la frustración.",
-      "Mantener la ilusión mágica perfecta durante toda la infancia y adolescencia sin fallar jamás.",
-      "Ignorar los gestos del niño y forzarlo a adaptarse a las normas del mundo adulto inmediatamente."
+      "Obliga al lactante a experimentar un trauma severo que fortalezca tempranamente sus mecanismos de escisión.",
+      "Permite primero fundar la omnipotencia subjetiva y luego introduce fallas dosificadas para acceder a la realidad.",
+      "Perpetúa la convicción de que los deseos del sujeto controlan mágicamente el entorno social durante la vida.",
+      "Suprime definitivamente la capacidad creadora del infante para asegurar su inserción en el orden normativo."
     ],
     correctAnswer: 1,
-    explanation: "La madre suficientemente buena primero aporta una adaptación casi perfecta para que el bebé sienta la ilusión de omnipotencia creadora; luego, al ritmo en que el niño adquiere memoria y tolerancia, introduce una desilusión gradual (pequeñas fallas dosificadas) para abrir paso a la realidad.",
+    explanation: "La madre primero brinda una adaptación perfecta que crea la ilusión de omnipotencia ('el bebé crea lo que encuentra'); después, desilusiona de manera gradual según la tolerancia infantil, abriendo el camino hacia el principio de realidad compartido.",
     distractorExplanations: [
-      "La frustración precoz e indiscriminada destruye la continuidad del ser y precipita agonías primitivas.",
-      "Una adaptación perfecta perpetua es patológica: anula el acceso a la realidad y genera pensamiento omnipotente/mágico en el adulto.",
-      "Ignorar al niño engendra un Falso Self sumiso o defensas autistas graves."
+      "El trauma severo no fortalece, sino que quiebra la continuidad del ser y precipita patologías arcaicas.",
+      "La desilusión busca precisamente desmontar el pensamiento mágico omnipotente desmedido en el adulto.",
+      "No suprime la creatividad; la transfiere desde la omnipotencia subjetiva hacia la cultura compartida."
     ]
   },
   {
     id: "q26",
     moduleId: "mod3",
     theme: "Donald Winnicott",
-    topic: "Objeto Transicional",
-    question: "¿Qué características definen al 'Objeto Transicional' (primera posesión no-mí) según Winnicott?",
+    topic: "Naturaleza del Objeto Transicional",
+    question: "¿Cuál de las siguientes afirmaciones describe con precisión las propiedades del 'Objeto Transicional'?",
     options: [
-      "Es un regalo costoso que los padres imponen y lavan obsesivamente a diario.",
-      "Es una posesión elegida por el bebé (peluche, mantita), dotada de cualidades mágicas y materialidad resistente, que no se lava ni se impone, y alivia la separación materna.",
-      "Es una alucinación psíquica sin ninguna base material tangible.",
-      "Es un símbolo matemático abstracto propio de la etapa escolar."
+      "Es un objeto rígido impuesto por los padres que debe mantenerse rigurosamente estéril mediante lavados diarios.",
+      "Es la primera posesión no-yo elegida por el bebé, dotada de cualidades mágicas y una materialidad que resiste.",
+      "Constituye una alucinación endógena sin cuerpo material tangible que sustituye al pecho en la posición depresiva.",
+      "Es un juguete industrial sofisticado que el niño intercambia con sus pares para negociar la separación materna."
     ],
     correctAnswer: 1,
-    explanation: "El objeto transicional es una primera posesión 'no-yo': un muñeco, trapito o manta que el bebé encuentra y hace suyo. Es aromado, manchado de fluidos, mordido y abrazado; sobrevive al ataque agresivo y media el tránsito hacia el mundo exterior.",
+    explanation: "El objeto transicional (manta, osito, pañal) es la primera posesión 'no-yo': tiene realidad material externa pero está investido de cualidades subjetivas mágicas; no debe ser lavado obsesivamente y resiste el amor y la agresión del bebé.",
     distractorExplanations: [
-      "Los padres no deben imponerlo ni lavarlo compulsivamente, pues borrarían el olor y la investidura depositada por el infante.",
-      "Tiene materialidad tangible que resiste, no es una mera alucinación interna.",
-      "Aparece entre los 4 meses y el primer año de vida, no en la escuela."
+      "Los padres no deben imponerlo ni lavarlo obsesivamente, pues destruirían su olor y el valor afectivo singular.",
+      "No es una mera alucinación mental; tiene existencia material tangible que se puede abrazar, chupar y morder.",
+      "No se define por ser un juguete sofisticado de intercambio social, sino por su valor transicional íntimo."
     ]
   },
   {
     id: "q27",
     moduleId: "mod3",
     theme: "Donald Winnicott",
-    topic: "Destino del Objeto Transicional",
-    question: "¿Cuál es el destino final del objeto transicional a lo largo de la vida del sujeto?",
+    topic: "Destino Cultural del Objeto Transicional",
+    question: "Al cabo de la infancia, ¿cuál es el destino metapsicológico final del objeto y los fenómenos transicionales?",
     options: [
-      "Se entierra ritualmente mediante un complejo duelo patológico.",
-      "No se pierde ni se duela; pierde relevancia específica en la medida en que sus funciones se difuminan en todo el ámbito de la cultura, el arte y el juego.",
-      "Se convierte en el núcleo del delirio persecutorio esquizofrénico.",
-      "Es sustituido forzosamente por el dinero y las posesiones materiales de la adultez."
+      "Son sometidos a un duelo melancólico doloroso al constatar que fueron reemplazados por el principio del deber.",
+      "No se pierden ni se duelan; pierden intensidad específica al difuminarse en todo el territorio de la cultura.",
+      "Se convierten en el núcleo encapsulado de los delirios paranoides de influencia que surgen en la adultez.",
+      "Son destruidos físicamente por el sujeto como prueba concluyente de su madurez genital e independencia."
     ],
     correctAnswer: 1,
-    explanation: "El objeto transicional no es objeto de un duelo fúnebre porque nunca se 'pierde' psíquicamente: se descarga su catexis puntual y su cualidad transicional se extiende a todo el ámbito cultural humano (música, pintura, cine, literatura, religión).",
+    explanation: "Winnicott afirma textualmente que el objeto transicional 'no se duela porque no se pierde': su catexis puntual se va desinvistiendo y su cualidad intermedia se expande a las artes, la literatura, el juego, el cine y la religión.",
     distractorExplanations: [
-      "Winnicott remarca textualmente: 'El objeto transicional no se duela porque no se pierde'.",
-      "No es la base del delirio; al contrario, es el pilar de la salud mental y la capacidad de disfrute cultural.",
-      "No es codicia materialista burguesa, sino experiencia simbólica y creativa."
+      "No son objeto de duelo fúnebre o melancólico; no se extravían en el vacío psíquico.",
+      "No son la semilla del delirio paranoide, sino la base estructurante de la apreciación estética y cultural sana.",
+      "Destruirlo físicamente no es signo de madurez; de hecho, suele conservarse afectuosamente en el recuerdo."
     ]
   },
   {
@@ -587,141 +588,141 @@ const QUESTIONS_DATA = [
     moduleId: "mod3",
     theme: "Donald Winnicott",
     topic: "Secuencia del Uso del Objeto",
-    question: "En el tránsito crucial de la 'Relación con el objeto' al 'Uso del objeto', ¿qué paso indispensable debe acontecer según Winnicott?",
+    question: "¿Qué secuencia teórica describe el paso desde la 'Relación con el objeto' hasta el 'Uso del objeto'?",
     options: [
-      "El objeto debe castigar al niño para enseñarle los límites de la autoridad.",
-      "El sujeto debe destruir al objeto en su fantasía y el objeto debe SOBREVIVIR sin tomar represalias ni retaliar.",
-      "El sujeto debe abandonar todo contacto con la realidad exterior y aislarse.",
-      "La madre debe retirarse definitivamente de la vida del niño."
+      "Relación de objeto ➔ Idealización mágica ➔ Sometimiento sumiso al objeto ➔ Internalización definitiva del superyó.",
+      "Relación de objeto ➔ Objeto hallado/creado ➔ Destrucción del objeto en la fantasía ➔ Sobrevivencia del objeto ➔ Uso del objeto.",
+      "Relación de objeto ➔ Pérdida irreversible del objeto ➔ Duelo melancólico prolongado ➔ Alucinación del objeto transicional.",
+      "Relación de objeto ➔ Retaliación agresiva del objeto ➔ Resignación masoquista del sujeto ➔ Adaptación al mundo exterior."
     ],
     correctAnswer: 1,
-    explanation: "Para pasar de proyectar sobre el objeto a USARLO en la realidad objetiva compartida, el sujeto debe destruirlo en la omnipotencia fantasmática. Si el objeto (madre/analista) sobrevive sin derrumbarse ni vengarse, el sujeto descubre: '¡Te destruí y sigues ahí, luego eres real y estás fuera de mi omnipotencia!'.",
+    explanation: "Para pasar de proyectar sobre el objeto a USARLO como entidad externa independiente, el infante debe destruirlo en su fantasía y comprobar que el objeto sobrevive en la realidad sin vengarse ni destruirse.",
     distractorExplanations: [
-      "Si el objeto castiga o retalia, confirma las angustias persecutorias y anula el uso objetivo.",
-      "El uso del objeto es precisamente la conquista del principio de realidad, no el aislamiento.",
-      "La madre no debe desaparecer; su presencia constante que sobrevive es la condición de posibilidad del proceso."
+      "El sometimiento sumiso consolida un falso self patológico, no el uso saludable del objeto real en el mundo exterior.",
+      "Si el objeto se pierde de forma irreversible o no sobrevive a la destructividad, fracasa el tránsito hacia el uso.",
+      "Si el objeto retalia o toma represalias agresivas, la relación permanece atrapada en un circuito persecutorio."
     ]
   },
 
-  // --- MÓDULO 4: WINNICOTT FALSO SELF Y ESTAR SOLO (Preguntas 29 a 36) ---
+  // --- MÓDULO 4: WINNICOTT FALSO SELF Y ESTAR SOLO (8 preguntas) ---
   {
     id: "q29",
     moduleId: "mod4",
     theme: "Donald Winnicott",
     topic: "Etiología del Falso Self",
-    question: "¿Cuál es el origen o etiología estructural del 'Falso Self' según Winnicott?",
+    question: "¿Cuál es la falla ambiental arcaica que precipita la estructuración defensiva del 'Falso Self' en Winnicott?",
     options: [
-      "Una alteración genética en los receptores sinápticos del lóbulo frontal.",
-      "Una falla del ambiente facilitador donde la madre, en vez de acoger y satisfacer el gesto espontáneo del infante, impone su propio gesto, forzando la sumisión del niño.",
-      "El aprendizaje deliberado de técnicas actorales teatrales en la infancia temprana.",
-      "El castigo escolar por desobediencia en el primer año de educación básica."
+      "El castigo escolar severo que recibe el niño por negarse a participar en las tareas pedagógicas colectivas.",
+      "La imposición del quehacer de la madre en vez de acoger y dar respuesta oportuna al gesto espontáneo infantil.",
+      "La carencia hereditaria de receptores neurológicos adecuados para procesar los afectos de ternura ambiental.",
+      "La persistencia indefinida de la ilusión mágica omnipotente sin ninguna interrupción durante la adolescencia."
     ],
     correctAnswer: 1,
-    explanation: "El Falso Self surge cuando el ambiente primario falla: la madre no responde al gesto espontáneo infantil, sino que le impone sus propias demandas y objetos. El bebé, para proteger la continuidad de su existencia y su Verdadero Self secreto, se somete y adopta una coraza de sumisión y acomodación.",
+    explanation: "El Falso Self surge cuando el ambiente primario falla en sintonizar: la madre impone sus propios gestos y objetos antes de que el niño exprese los suyos, forzándolo a una acomodación sumisa precoz para proteger su Verdadero Self.",
     distractorExplanations: [
-      "Winnicott no reduce este fenómeno intersubjetivo relacional a causas neurológicas congénitas.",
-      "No es actuación artística voluntaria, sino una defensa psíquica de supervivencia arcaica.",
-      "Se consolida mucho antes de la escolaridad, en la fase de dependencia temprana."
+      "El origen se ubica en las fases más arcaicas de la díada lactante-madre, mucho antes del ingreso escolar formal.",
+      "Winnicott descarta las explicaciones biologicistas deterministas puras para la alienación subjetiva del falso self.",
+      "La persistencia de la ilusión produce problemas con el principio de realidad, pero no la coraza de sumisión del falso self."
     ]
   },
   {
     id: "q30",
     moduleId: "mod4",
     theme: "Donald Winnicott",
-    topic: "Falso Self: Salud vs Patología",
-    question: "¿Cómo se manifiesta el Falso Self en un estado de salud psíquica comparado con un estado patológico?",
+    topic: "Falso Self en Salud vs Patología",
+    question: "¿Cómo se distingue la manifestación del Falso Self en un estado de salud frente a su expresión patológica?",
     options: [
-      "En salud no existe en lo absoluto; en patología solo aparece cuando la persona duerme.",
-      "En salud constituye la cortesía, la educación y los modales sociales; en patología se rigidiza, engolfa y reemplaza al Verdadero Self, produciendo sensación de vacío y futilidad.",
-      "En salud produce alucinaciones visuales y en patología genera hiperactividad.",
-      "En salud la persona es totalmente sincera y agresiva en todo contexto sin filtro alguno."
+      "En salud el sujeto carece de convenciones sociales; en patología es una persona amable y sincera en todo momento.",
+      "En salud es la cortesía social educada; en patología engolfa y suplanta al Verdadero Self produciendo vacío y futilidad.",
+      "En salud engendra crisis maníacas placenteras; en patología produce alucinaciones visuales de persecución auditiva.",
+      "En salud conduce a la sumisión irrestricta frente al ambiente; en patología permite la espontaneidad absoluta."
     ],
     correctAnswer: 1,
-    explanation: "Winnicott aclara que el Falso Self tiene una vertiente sana: la cortesía civilizada, el tacto y el respeto de las normas sociales (no podemos decir todo sin filtros). En la patología, se hipertrofia y desconecta a la persona de sus afectos genuinos, dejándola con la dolorosa vivencia de 'no haber vivido realmente'.",
+    explanation: "En la salud, el Falso Self es la actitud cortés y diplomática que permite convivir en sociedad sin exponerlo todo; en la patología, se hipertrofia y reemplaza al Verdadero Self, dejando una vida exitosa pero alienada y vacía.",
     distractorExplanations: [
-      "En salud sí existe: un ser humano sin falso self social sería incapaz de convivencia pacífica.",
-      "No se manifiesta como alucinaciones sensoriales directas.",
-      "La franqueza bruta e irrestricta en todo momento no es sinónimo de salud mental en la sociedad humana."
+      "Carecer de convenciones y agredir con franqueza bruta constante no es salud; destruye la vida social interpersonal.",
+      "No se manifiesta típicamente como manía ni alucinaciones auditivas, sino como desvitalización y vivencia de falsedad.",
+      "Invierte los términos: la sumisión forzada es el sello patológico, mientras que la espontaneidad anida en el Verdadero Self."
     ]
   },
   {
     id: "q31",
     moduleId: "mod4",
     theme: "Donald Winnicott",
-    topic: "Falso Self y Suicidio",
-    question: "¿Cuál es la desgarradora paradoja teórica que Winnicott señala respecto al suicidio en personalidades con Falso Self grave?",
+    topic: "Paradoja del Suicidio y Falso Self",
+    question: "¿Cuál es la paradoja psicodinámica que Donald Winnicott revela respecto al suicidio en personalidades con Falso Self?",
     options: [
-      "El suicidio es un acto de venganza consciente y planificado contra los herederos testamentarios.",
-      "El suicidio implica la destrucción del self total como último recurso extremo para evitar la traición y la aniquilación definitiva del Verdadero Self.",
-      "El suicidio es solo un juego infantil mal calculado debido a falta de inteligencia.",
-      "El suicidio ocurre únicamente por impulsos canibalísticos heredados biológicamente."
+      "Constituye un acto de cobardía consciente para evitar saldar las deudas económicas contraídas en la realidad.",
+      "Implica destruir el self total como último recurso extremo para impedir la aniquilación del Verdadero Self.",
+      "Es una manipulación teatral histérica que busca reconquistar la preocupación maternal primaria de la infancia.",
+      "Representa la consumación triunfal de la pulsión de muerte que finalmente destruye los suministros del Yo."
     ],
     correctAnswer: 1,
-    explanation: "Winnicott revela una paradoja clínica profunda: cuando el Falso Self ya no puede seguir defendiendo al Verdadero Self sin traicionarlo o corromperlo totalmente, el sujeto prefiere la muerte del cuerpo para salvar a su Verdadero Self de la profanación y poner fin al vacío insoportable.",
+    explanation: "Winnicott devela que cuando el Falso Self ya no puede seguir defendiendo al Verdadero Self sin traicionarlo o prostituirlo ante el ambiente, el sujeto prefiere la muerte del cuerpo biológico para salvar la pureza del Verdadero Self secreto.",
     distractorExplanations: [
-      "No se agota en una mezquina venganza consciente de herencia familiar.",
-      "No se debe a déficit intelectual cognitivo, sino a una fractura existencial arcaica.",
-      "Winnicott no suscribe las explicaciones reduccionistas canibalísticas puras en este plano."
+      "No es un cálculo utilitario de deudas financieras; responde a una fractura existencial intolerable del sentido de ser.",
+      "No es una simple manipulación teatral secundaria; es una tragedia psíquica de salvaguarda de lo genuino.",
+      "Winnicott no recurre a la pulsión de muerte como causa; lo conceptualiza como defensa desesperada del Verdadero Self."
     ]
   },
   {
     id: "q32",
     moduleId: "mod4",
     theme: "Donald Winnicott",
-    topic: "El Gesto Espontáneo y el Verdadero Self",
-    question: "¿De dónde surge el 'Gesto Espontáneo' creador del Verdadero Self?",
+    topic: "Gesto Espontáneo y Psicosoma",
+    question: "¿En qué territorio de la experiencia humana sitúa Winnicott el origen y nutrientes del 'Gesto Espontáneo'?",
     options: [
-      "De las órdenes explícitas del manual de crianza seguido por los progenitores.",
-      "De las sensaciones corporales, motrices, de los tejidos, las funciones fisiológicas y la respiración.",
-      "De la copia imitativa exacta de los movimientos de los hermanos mayores.",
-      "Del adiestramiento conductual y las recompensas externas."
+      "En las normas lingüísticas que el niño memoriza durante las primeras conversaciones con los adultos.",
+      "En las funciones corporales, sensorio-motrices, los tejidos vivos, el tono muscular y la respiración.",
+      "En la imitación meticulosa de los hábitos de conducta exhibidos por los progenitores en el hogar.",
+      "En la introyección pasiva de los ideales morales promulgados por el Superyó transgeneracional."
     ],
     correctAnswer: 1,
-    explanation: "El Verdadero Self se origina en la experiencia psicosomática basal: el libre fluir de impulsos sensorio-motores, la respiración, el tono muscular y los movimientos espontáneos del infante que no son reactivos a una intrusión exterior.",
+    explanation: "El gesto espontáneo proviene de la vida psicosomática íntima: de la respiración, las sensaciones motrices y el funcionamiento visceral de los tejidos; solo sobre este suelo somático vivo puede brotar el sentimiento de autenticidad.",
     distractorExplanations: [
-      "Las órdenes de manuales representan intrusiones ambientales contrarias al gesto espontáneo.",
-      "La imitación es la marca distintiva del Falso Self que se amolda, no del Verdadero Self.",
-      "El adiestramiento conductual premia la sumisión y la docilidad adaptativa."
+      "El lenguaje formal no es la matriz originaria del gesto espontáneo; precede a la palabra y nace en el psicosoma.",
+      "La imitación es justamente la herramienta del Falso Self para acomodarse a las expectativas del ambiente.",
+      "No deriva de mandatos del Superyó, sino de los impulsos vitales del Ello asentados en el cuerpo integrado."
     ]
   },
   {
     id: "q33",
     moduleId: "mod4",
     theme: "Donald Winnicott",
-    topic: "Regresión en el Tratamiento Analítico",
-    question: "En la clínica winnicottiana de pacientes con Falso Self o fallas tempranas, ¿cuál es el objetivo de la 'Regresión' en análisis?",
+    topic: "Regresión Terapéutica en Análisis",
+    question: "¿Qué función cumple la 'Regresión a la Dependencia' en el tratamiento analítico de pacientes con Falso Self?",
     options: [
-      "Hacer que el paciente actúe como un bebé en público para humillarlo.",
-      "Permitir una regresión a la fase de dependencia donde el analista oficie de Yo auxiliar confiable, para que el Falso Self ceda y el Verdadero Self se arriesgue a emerger.",
-      "Interpretar obsesivamente los complejos edípicos y castigar las resistencias del paciente.",
-      "Prescribir medicación química pesada para suprimir toda emoción espontánea."
+      "Permite al analista disciplinar al paciente infantilizándolo para obligarlo a renunciar a sus síntomas fóbicos.",
+      "Brinda un entorno de Yo auxiliar confiable donde el Falso Self cede y el Verdadero Self se arriesga a emerger.",
+      "Busca intensificar las defensas intelectuales para que el paciente construya un discurso lógico coherente.",
+      "Facilita la sugestión hipnótica directa para borrar los recuerdos traumáticos de las fallas tempranas de la madre."
     ],
     correctAnswer: 1,
-    explanation: "En análisis, pacientes con defensas de falso self pueden emprender una regresión profunda a la dependencia: allí, al comprobar la confiabilidad del analista que sostiene sin intrusión, pueden suspender la coraza defensiva y experimentar por primera vez la libertad de ser sí mismos.",
+    explanation: "En la regresión, el paciente vuelve a la fase de dependencia temprana; si el analista funciona como un Yo auxiliar confiable que sostiene sin invadir, el paciente puede desmontar la coraza del Falso Self y hacer nacer su Verdadero Self.",
     distractorExplanations: [
-      "La humillación es una falla catastrófica y perversa del encuadre analítico.",
-      "La interpretación intelectualizada precoz es vivida por el paciente como una nueva intrusión ambiental.",
-      "La meta no es la sedación farmacológica, sino la recuperación de la vitalidad y espontaneidad."
+      "La infantilización y el disciplinamiento reproducen las intrusiones ambientales traumáticas originales.",
+      "La meta no es hipertrofiar la coraza intelectual del falso self, sino recuperar el contacto con lo genuino y sentido.",
+      "Winnicott no practica hipnosis sugestiva de borrado mnémico; promueve la vivencia actual de ser en el encuadre."
     ]
   },
   {
     id: "q34",
     moduleId: "mod4",
     theme: "Donald Winnicott",
-    topic: "Creatividad Universal",
-    question: "¿Cómo entiende Donald Winnicott la 'Creatividad' en la experiencia humana cotidiana?",
+    topic: "Universalidad de la Creatividad",
+    question: "¿Cómo entiende Winnicott la 'Creatividad' y su importancia para la salud psíquica cotidiana?",
     options: [
-      "Un don reservado con exclusividad a grandes pintores, compositores y escritores consagrados.",
-      "Una condición universal inherente a la condición de estar vivos, que permite sentir que la vida tiene sentido, apropiación y vale la pena ser vivida.",
-      "Un síntoma histérico de desborde emocional que debe ser curado mediante disciplina.",
-      "Una habilidad técnica que solo se adquiere en academias formales de bellas artes."
+      "Un talento elitista que concierne exclusivamente a aquellos que producen obras de arte reconocidas socialmente.",
+      "Una condición universal propia de estar vivos que permite experimentar que la existencia tiene sentido propio.",
+      "Una manifestación de inmadurez yoica que debe ser sustituida por el pensamiento lógico objetivo en la adultez.",
+      "Un mecanismo de compensación narcisista al que recurren las personalidades con fallas en la personalización."
     ],
     correctAnswer: 1,
-    explanation: "Para Winnicott, la creatividad no es un talento elitista de virtuosos; es el modo básico en que un sujeto sano se aproxima a la realidad percibiendo el mundo como algo recreable por su propio gesto, sintiéndose auténticamente vivo y no un mero autómata acatador.",
+    explanation: "Para Winnicott, la creatividad no es monopolio de artistas: es el modo universal en que un ser humano saludable interactúa con el mundo sintiendo que la vida es digna de ser vivida, a diferencia de la vida de puro acatamiento sumiso.",
     distractorExplanations: [
-      "Winnicott declara explícitamente: 'La creatividad no le pertenece a los artistas, es una condición universal'.",
-      "No es un síntoma patológico ni una afección histérica.",
-      "No es destreza académica de taller, sino la pulsación viva de la existencia."
+      "Winnicott afirma textualmente que 'la creatividad no le pertenece a los artistas; es una condición de estar vivos'.",
+      "No es un rasgo de inmadurez; es el marcador por excelencia de la salud mental y del sentimiento de autenticidad.",
+      "No es una simple compensación narcisista patológica, sino la manifestación viva del Verdadero Self en acción."
     ]
   },
   {
@@ -729,73 +730,650 @@ const QUESTIONS_DATA = [
     moduleId: "mod4",
     theme: "Donald Winnicott",
     topic: "Diferencia entre Ser y Hacer",
-    question: "¿Cómo articula Winnicott la relación entre el 'Ser' y el 'Hacer', y su ligazón con lo femenino y lo masculino?",
+    question: "¿Cuál es la articulación ontológica entre el 'Ser' y el 'Hacer' desarrollada en la clínica winnicottiana?",
     options: [
-      "El Hacer debe preceder al Ser en todo momento para generar valor de mercado.",
-      "El sentimiento de SER es anterior y condición previa al HACER; lo femenino se asocia al Ser (identificación primaria/unidad) y lo masculino a la separación y relación objetal.",
-      "El Ser y el Hacer son idénticos y no admiten ninguna distinción clínica.",
-      "Lo femenino se define por el hacer activo y lo masculino por la pasividad receptiva absoluta."
+      "El Hacer debe anteceder cronológicamente al Ser para justificar la aceptación del individuo en el entorno.",
+      "El sentimiento de SER es anterior y requisito para el HACER; lo femenino se asocia al Ser y lo masculino al Hacer.",
+      "El Ser y el Hacer son conceptos indistinguibles que expresan exactamente la misma función adaptativa del Yo.",
+      "El Ser corresponde a la sumisión complaciente del falso self, mientras que el Hacer expresa el verdadero self.",
     ],
     correctAnswer: 1,
-    explanation: "El sentimiento fundamental de SER (establecido en la fase de ilusión donde bebé y madre son una unidad identitaria) es el piso indispensable sobre el cual luego puede erigirse el HACER. Winnicott asocia el elemento femenino primario al puro SER y el masculino a la separación/acción relacional.",
+    explanation: "El sentimiento originario de SER (fundado en la unidad identitaria con la madre) antecede y sostiene al HACER. Si se empuja al niño a 'hacer' sin un piso firme de 'ser', se engendra una falsa existencia hiperactiva pero vacía.",
     distractorExplanations: [
-      "Exigir el 'hacer' antes del 'ser' produce una personalidad sumisa y vacía de falso self.",
-      "Distinguirlos es fundamental para entender la psicopatología de pacientes que actúan sin sentirse vivos.",
-      "Es una inversión contraria a las formulaciones teóricas expresadas en el documento de cátedra."
+      "Forzar el 'hacer' antes del 'ser' es precisamente la causa arcaica del Falso Self complaciente y desvitalizado.",
+      "No son indistinguibles; la clínica con pacientes borderlines revela personas que 'hacen' mucho sin 'sentirse reales'.",
+      "El Ser no es sumisión; es la morada íntima del Verdadero Self; la sumisión proviene del falso self acatador."
     ]
   },
   {
     id: "q36",
     moduleId: "mod4",
     theme: "Donald Winnicott",
-    topic: "Capacidad de Estar Solo",
-    question: "¿Cuál es la fascinante paradoja formulada por Winnicott en torno al desarrollo de la 'Capacidad de Estar Solo'?",
+    topic: "Paradoja de la Capacidad de Estar Solo",
+    question: "¿Cuál es la paradoja esencial formulada por Winnicott respecto al desarrollo de la 'Capacidad de Estar Solo'?",
     options: [
-      "Que para aprender a estar solo el niño debe ser encerrado en una habitación oscura sin luz.",
-      "Que la capacidad genuina de estar solo tiene como condición fundante la experiencia en la infancia de estar solo en presencia de la madre.",
-      "Que solo las personas que nunca amaron a nadie son capaces de tolerar la soledad.",
-      "Que la soledad se adquiere a través del castigo por malas calificaciones escolares."
+      "Que para conquistar la soledad el niño debe experimentar el aislamiento físico prolongado sin ninguna compañía.",
+      "Que la capacidad genuina de estar solo tiene como fundamento haber estado a solas en presencia de la madre.",
+      "Que solo pueden disfrutar de la soledad aquellos individuos que carecen de objetos introyectados en su psiquismo.",
+      "Que la soledad adulta es el resultado inevitable de la claudicación defensiva del objeto transicional primario."
     ],
     correctAnswer: 1,
-    explanation: "La paradoja de Winnicott: la capacidad de estar solo (uno de los signos más elevados de madurez psíquica) surge de haber vivido de pequeño la experiencia de jugar y relajarse en soledad EN PRESENCIA de una madre amorosa que no interrumpe ni exige nada. El infante introyecta esa presencia benigna como un piso de confianza infinita.",
+    explanation: "La paradoja de Winnicott sostiene que la capacidad de estar solo (signo de alta madurez) se construye en la infancia al estar a solas EN PRESENCIA de la madre facilitadora, quien no invade ni exige nada, permitiendo el reposo en la no-integración.",
     distractorExplanations: [
-      "El encierro solitario produce angustias de desamparo y traumas devastadores.",
-      "La soledad sana requiere haber introyectado objetos buenos protectores estables.",
-      "El castigo y la frialdad ambiental no engendran capacidad de estar solo, sino pavor al abandono."
+      "El aislamiento físico forzado genera agonías impensables de desamparo y trauma, no madurez emocional.",
+      "Para estar solo se requiere lo contrario: haber introyectado a la madre auxiliar confiable como piso de amparo interno.",
+      "No deriva de la claudicación del objeto transicional, sino de la internalización estable de un ambiente benigno."
     ]
   }
 ];
 
+// PREGUNTAS DE DESARROLLO / COMPLETACIÓN DE ORACIONES CLAVE CON PALABRAS Y FRASES CLAVE
+const COMPLETION_QUESTIONS_DATA = [
+  {
+    id: "c1",
+    author: "Melanie Klein",
+    topic: "Complejo de Edipo temprano y Posición Depresiva",
+    title: "Origen temporal del Edipo kleiniano",
+    instruction: "Completa la oración seleccionando los conceptos teóricos exactos en cada espacio:",
+    template: "Para Melanie Klein, los estadios tempranos del Complejo de Edipo se originan entre {blank1} y emergen cuando el infante ingresa en la {blank2}, integrando a la madre como un {blank3}.",
+    blanks: [
+      {
+        id: "blank1",
+        label: "Rango temporal",
+        correct: "los 6 meses y los 3 años",
+        options: [
+          "los 6 meses y los 3 años",
+          "los 3 y los 5 años (fase fálica)",
+          "el segundo y cuarto mes de vida",
+          "el inicio de la pubertad"
+        ]
+      },
+      {
+        id: "blank2",
+        label: "Posición psíquica",
+        correct: "posición depresiva",
+        options: [
+          "posición depresiva",
+          "posición esquizoparanoide pura",
+          "fase genital madura",
+          "etapa de latencia escolar"
+        ]
+      },
+      {
+        id: "blank3",
+        label: "Tipo de objeto",
+        correct: "objeto total y separado",
+        options: [
+          "objeto total y separado",
+          "objeto parcial escindido",
+          "objeto transicional neutro",
+          "objeto subjetivo alucinado"
+        ]
+      }
+    ],
+    rationale: "Klein demuestra que el Edipo no espera al declive fálico clásico de los 3 a 5 años; sus raíces tempranas se hunden entre los 6 meses y 3 años cuando la integración del objeto total en la posición depresiva despierta culpa, ambivalencia y triangulación parental."
+  },
+  {
+    id: "c2",
+    author: "Melanie Klein",
+    topic: "Destete y Cambio de Objeto",
+    title: "El destete como motor del viraje al padre",
+    instruction: "Completa los espacios para reconstruir la tesis del cambio de objeto en Melanie Klein:",
+    template: "El acontecimiento que promueve el alejamiento de la madre hacia el padre es el {blank1}. Las frustraciones y el odio que suscita no conducen al pene por envidia fálica, sino como un objeto de deseo {blank2} alternativo para amortiguar las ansiedades {blank3}.",
+    blanks: [
+      {
+        id: "blank1",
+        label: "Acontecimiento fundante",
+        correct: "destete oral",
+        options: [
+          "destete oral",
+          "castigo del padre real",
+          "entrenamiento higiénico anal",
+          "nacimiento de un hermano"
+        ]
+      },
+      {
+        id: "blank2",
+        label: "Registro del deseo",
+        correct: "oral",
+        options: [
+          "oral",
+          "fálico clásico",
+          "uretral expulsivo",
+          "intelectualizado neutro"
+        ]
+      },
+      {
+        id: "blank3",
+        label: "Tipo de ansiedades",
+        correct: "persecutorias y depresivas",
+        options: [
+          "persecutorias y depresivas",
+          "de castración genital freudiana",
+          "obsesivas de contaminación",
+          "sociales y de timidez"
+        ]
+      }
+    ],
+    rationale: "A diferencia de Freud (que explicaba el viraje de la niña por envidia del pene anatómico), Klein demuestra que el destete oral fisura la fusión nutricia; el infante busca compensar la privación oral volviéndose hacia el pene paterno para mitigar angustias de desamparo y persecución."
+  },
+  {
+    id: "c3",
+    author: "Melanie Klein",
+    topic: "Diferencia entre Celos y Envidia",
+    title: "Estructura de los Celos y la Envidia",
+    instruction: "Completa la distinción estructural entre ambas mociones afectivas:",
+    template: "Los celos corresponden a una vivencia {blank1} que involucra a objetos {blank2} por temor a perder el amor ante un rival; en cambio, la envidia es una relación más arcaica y {blank3} donde se ataca lo bueno que la madre retiene.",
+    blanks: [
+      {
+        id: "blank1",
+        label: "Estructura relacional de los celos",
+        correct: "triangular",
+        options: [
+          "triangular",
+          "diádica",
+          "monádica narcisista",
+          "transgeneracional"
+        ]
+      },
+      {
+        id: "blank2",
+        label: "Condición de los objetos en los celos",
+        correct: "totales",
+        options: [
+          "totales",
+          "parciales escindidos",
+          "transicionales",
+          "abstractos"
+        ]
+      },
+      {
+        id: "blank3",
+        label: "Estructura relacional de la envidia",
+        correct: "diádica",
+        options: [
+          "diádica",
+          "triangular edípica",
+          "institucional social",
+          "secundaria madura"
+        ]
+      }
+    ],
+    rationale: "Los celos implican tres personas percibidas como seres enteros (madre, bebé, padre/tercero). La envidia, en cambio, es previa, diádica y feroz: ataca a la fuente nutricia misma porque contiene los bienes (leche, bebés, penes) de los cuales el bebé se siente privado."
+  },
+  {
+    id: "c4",
+    author: "Melanie Klein",
+    topic: "Pulsión Epistemofílica e Inhibición Intelectual",
+    title: "Raíces sádicas de la curiosidad",
+    instruction: "Selecciona las frases que explican la articulación entre el deseo de saber y la agresividad:",
+    template: "La pulsión epistemofílica surge de la fantasía de {blank1} el cuerpo materno y despojar sus riquezas. Por ello, investigar se articula con componentes {blank2}; si la culpa o la agresión son incontroladas, esto puede derivar en {blank3} como defensa frente al peligro de saber.",
+    blanks: [
+      {
+        id: "blank1",
+        label: "Fantasía inconsciente",
+        correct: "abrirse paso sádicamente en",
+        options: [
+          "abrirse paso sádicamente en",
+          "admirar pacíficamente desde lejos",
+          "copiar las palabras lógicas de",
+          "reprimir los orígenes de"
+        ]
+      },
+      {
+        id: "blank2",
+        label: "Componente pulsional",
+        correct: "sádicos (cortar, desarmar y vaciar)",
+        options: [
+          "sádicos (cortar, desarmar y vaciar)",
+          "autoconservativos puros",
+          "desexualizados sin afecto",
+          "exclusivamente orales pasivos"
+        ]
+      },
+      {
+        id: "blank3",
+        label: "Consecuencia clínica",
+        correct: "inhibiciones severas del aprendizaje",
+        options: [
+          "inhibiciones severas del aprendizaje",
+          "un rendimiento intelectual superdotado",
+          "la supresión de la pulsión de muerte",
+          "alucinaciones esquizofrénicas directas"
+        ]
+      }
+    ],
+    rationale: "Aprender y estudiar conllevan inconscientemente diseccionar y apropiarse de los secretos corporales de la madre. Si el niño siente que esa curiosidad es un ataque destructivo que destruyó a la madre amada, surge la inhibición intelectual escolar como escudo protector frente a la culpa."
+  },
+  {
+    id: "c5",
+    author: "Melanie Klein",
+    topic: "Objeto Combinado",
+    title: "Fantasía de la escena primaria arcaica",
+    instruction: "Reconstruye la definición kleiniana de la figura del Objeto Combinado:",
+    template: "Al proyectar su propia agresión sobre los padres unidos, el niño fantasea que el padre forma parte de la madre, creando la figura de la {blank1} en una escena confusa de coito {blank2} e infinito, lo que constituye la fuente de {blank3} infantiles.",
+    blanks: [
+      {
+        id: "blank1",
+        label: "Figura fantasmática",
+        correct: "madre fálica",
+        options: [
+          "madre fálica",
+          "madre suficientemente buena",
+          "madre nutricia desexualizada",
+          "mujer castrada pasiva"
+        ]
+      },
+      {
+        id: "blank2",
+        label: "Naturaleza de la unión coital",
+        correct: "sádico continuado",
+        options: [
+          "sádico continuado",
+          "armonioso y sublimado",
+          "verbal y pedagógico",
+          "platónico sin intercambio corporal"
+        ]
+      },
+      {
+        id: "blank3",
+        label: "Manifestación clínica infantil",
+        correct: "pesadillas y delirios persecutorios",
+        options: [
+          "pesadillas y delirios persecutorios",
+          "juegos transicionales pacíficos",
+          "fobias exclusivas a la oscuridad",
+          "retrasos motrices del lenguaje"
+        ]
+      }
+    ],
+    rationale: "El objeto combinado sintetiza los mayores terrores del niño pequeño: la exclusión de una escena primaria terrorífica donde los cuerpos parentales intercambian goce oral, anal, uretral y genital sin pausa, poblando las noches de pesadillas persecutorias."
+  },
+  {
+    id: "c6",
+    author: "Melanie Klein",
+    topic: "Superyó Temprano y Pulsión de Muerte",
+    title: "Génesis y severidad endógena del Superyó",
+    instruction: "Completa la tesis kleiniana sobre el origen de la severidad del Superyó temprano:",
+    template: "El Superyó temprano kleiniano surge en la fase {blank1} del primer año y suele ser extremadamente sádico porque constituye un cultivo de la {blank2}. Su severidad no depende del padre real, sino de las {blank3} proyectadas por el propio sujeto.",
+    blanks: [
+      {
+        id: "blank1",
+        label: "Fase de origen",
+        correct: "oral-sádica",
+        options: [
+          "oral-sádica",
+          "fálica clásica freudiana",
+          "genital post-puberal",
+          "de latencia moral"
+        ]
+      },
+      {
+        id: "blank2",
+        label: "Fuerza pulsional",
+        correct: "pulsión de muerte",
+        options: [
+          "pulsión de muerte",
+          "pulsión de autoconservación",
+          "libido narcisista pura",
+          "tendencia adaptativa innata"
+        ]
+      },
+      {
+        id: "blank3",
+        label: "Causa de la severidad",
+        correct: "mociones agresivas y destructivas infantiles",
+        options: [
+          "mociones agresivas y destructivas infantiles",
+          "órdenes disciplinarias del padre biológico",
+          "normas escolares de la educación formal",
+          "carencias nutricionales del amamantamiento"
+        ]
+      }
+    ],
+    rationale: "Klein demuestra que la crueldad del superyó primitivo no es copia de la severidad real del padre externo, sino el reflejo de las proyecciones de las pulsiones mortíferas del propio lactante sobre los objetos que luego introyecta como amos despiadados."
+  },
+  {
+    id: "c7",
+    author: "Donald Winnicott",
+    topic: "Premisas y Rechazo de Pulsión de Muerte",
+    title: "La agresión infantil según Donald Winnicott",
+    instruction: "Completa la concepción winnicottiana de la agresividad inicial del bebé:",
+    template: "Winnicott rechaza la noción de {blank1}. Para él, la agresividad inicial del lactante no encierra ninguna intención de dañar, sino que es testimonio de un {blank2} y de una vitalidad sensorio-motora en el marco de una tendencia innata hacia el {blank3}.",
+    blanks: [
+      {
+        id: "blank1",
+        label: "Concepto rechazado",
+        correct: "pulsión de muerte",
+        options: [
+          "pulsión de muerte",
+          "inconsciente reprimido",
+          "desarrollo emocional primario",
+          "relación con el ambiente"
+        ]
+      },
+      {
+        id: "blank2",
+        label: "Sentido de la agresión",
+        correct: "gesto espontáneo",
+        options: [
+          "gesto espontáneo",
+          "deseo canibalístico perverso",
+          "síntoma histérico temprano",
+          "mandato del superyó cruel"
+        ]
+      },
+      {
+        id: "blank3",
+        label: "Dirección evolutiva",
+        correct: "desarrollo y la maduración",
+        options: [
+          "desarrollo y la maduración",
+          "retorno a lo inorgánico inanimado",
+          "sometimiento sumiso al orden",
+          "aislamiento autista definitivo"
+        ]
+      }
+    ],
+    rationale: "Winnicott reemplaza el pesimismo pulsional kleiniano por una confianza fundamental en la naturaleza humana: el niño nace con una potencialidad madurativa propia ('como una semilla'); patología no es pulsión de muerte, sino interferencia y falla del ambiente facilitador."
+  },
+  {
+    id: "c8",
+    author: "Donald Winnicott",
+    topic: "Preocupación Maternal Primaria y Yo Auxiliar",
+    title: "La madre suficientemente buena en el puerperio",
+    instruction: "Completa las características de la función materna temprana en Winnicott:",
+    template: "En las últimas semanas de gestación y primeras de postparto, la madre entra en un estado de {blank1}. Al identificarse plenamente con su hijo, funciona como su {blank2} y barrera anti-estímulo, proporcionando las condiciones para que el infante viva la {blank3}.",
+    blanks: [
+      {
+        id: "blank1",
+        label: "Estado materno especial",
+        correct: "locura normal y necesaria",
+        options: [
+          "locura normal y necesaria",
+          "depresión psicótica puerperal",
+          "neurosis obsesiva de vigilancia",
+          "frialdad pedagógica planificada"
+        ]
+      },
+      {
+        id: "blank2",
+        label: "Rol metapsicológico de la madre",
+        correct: "Yo auxiliar",
+        options: [
+          "Yo auxiliar",
+          "Superyó punitivo arcaico",
+          "objeto transicional inerte",
+          "rival edípico castrador"
+        ]
+      },
+      {
+        id: "blank3",
+        label: "Experiencia fundante del bebé",
+        correct: "ilusión omnipotente (crear lo hallado)",
+        options: [
+          "ilusión omnipotente (crear lo hallado)",
+          "angustia inconcebible de caída",
+          "sumisión obligada del falso self",
+          "castración genital anticipada"
+        ]
+      }
+    ],
+    rationale: "Gracias a esta sensibilidad transitoria extrema ('preocupación maternal primaria'), la madre ofrece el pecho justo cuando el bebé lo desea, permitiendo que el bebé crea mágicamente que él creó aquello que se le presenta, fundando su confianza en la vida."
+  },
+  {
+    id: "c9",
+    author: "Donald Winnicott",
+    topic: "No-Integración vs Desintegración y Agonías Impensables",
+    title: "La desintegración como defensa activa",
+    instruction: "Distingue entre el reposo no-integrado y la desintegración ante fallas ambientales:",
+    template: "Al nacer, el bebé habita un estado saludable de {blank1}. Si el ambiente falla prematuramente, el infante se expone a la {blank2}; para protegerse, recurre a la desintegración, que consiste en una producción activa de {blank3} dentro del campo de la omnipotencia.",
+    blanks: [
+      {
+        id: "blank1",
+        label: "Estado basal saludable",
+        correct: "no-integración",
+        options: [
+          "no-integración",
+          "desintegración psicótica",
+          "sumisión de falso self",
+          "fusión indestructible"
+        ]
+      },
+      {
+        id: "blank2",
+        label: "Amenaza catastrófica",
+        correct: "angustia inconcebible (agonía impensable)",
+        options: [
+          "angustia inconcebible (agonía impensable)",
+          "culpa depresiva kleiniana",
+          "envidia hacia el pecho bueno",
+          "represión neurótica del complejo de Edipo"
+        ]
+      },
+      {
+        id: "blank3",
+        label: "Mecanismo de la desintegración",
+        correct: "caos propio organizado por el infante",
+        options: [
+          "caos propio organizado por el infante",
+          "ideas delirantes de grandeza",
+          "obediencia ciega a la autoridad",
+          "recuerdos reprimidos de la escena primaria"
+        ]
+      }
+    ],
+    rationale: "La no-integración permite descansar en el regazo materno. Pero si una falla ambiental irrumpe bruscamente, el bebé crea activamente caos (desintegración) para no caer en el vacío impensable: un caos que él mismo produce es menos destructivo que el terror absoluto del derrumbe."
+  },
+  {
+    id: "c10",
+    author: "Donald Winnicott",
+    topic: "Zona Intermedia y Paradoja del Objeto Transicional",
+    title: "La tercera área de experiencia humana",
+    instruction: "Completa la formulación winnicottiana del objeto y espacio transicional:",
+    template: "El objeto transicional representa la primera posesión {blank1} y se ubica en la {blank2}. Constituye una paradoja que debe ser tolerada sin resolver: el objeto es simultáneamente {blank3} por el sujeto.",
+    blanks: [
+      {
+        id: "blank1",
+        label: "Definición de posesión",
+        correct: "no-mí (no-yo)",
+        options: [
+          "no-mí (no-yo)",
+          "puramente endógena",
+          "impuesta por la cultura",
+          "delirante alucinatoria"
+        ]
+      },
+      {
+        id: "blank2",
+        label: "Localización psíquica",
+        correct: "zona intermedia de la experiencia",
+        options: [
+          "zona intermedia de la experiencia",
+          "conciencia del principio del deber",
+          "represión secundaria del Ello",
+          "pulsión destructiva pura"
+        ]
+      },
+      {
+        id: "blank3",
+        label: "Paradoja fundamental",
+        correct: "creado y encontrado en la realidad",
+        options: [
+          "creado y encontrado en la realidad",
+          "amado y castigado por el padre",
+          "introyectado y expulsado al exterior",
+          "destruido y lamentado en duelo fúnebre"
+        ]
+      }
+    ],
+    rationale: "Ni puramente adentro (subjetivo) ni puramente afuera (objetivo): el osito o la mantita viven en la zona intermedia. Los adultos jamás deben exigirle al niño que resuelva la paradoja ('¿lo inventaste tú o ya estaba ahí?'); de esta tercera zona nace el arte, la religión y el juego libre."
+  },
+  {
+    id: "c11",
+    author: "Donald Winnicott",
+    topic: "Uso del Objeto y Destrucción",
+    title: "La sobrevivencia del objeto a la destructividad",
+    instruction: "Reconstruye la secuencia indispensable para acceder al Uso del Objeto:",
+    template: "Para transitar de la relación con el objeto al {blank1}, es indispensable que el sujeto {blank2} al objeto en su fantasía y que el objeto {blank3} sin tomar represalias ni quebrarse.",
+    blanks: [
+      {
+        id: "blank1",
+        label: "Conquista de la exterioridad",
+        correct: "uso del objeto real",
+        options: [
+          "uso del objeto real",
+          "sometimiento del falso self",
+          "estado de omnipotencia mágica",
+          "duelo de la relación primaria"
+        ]
+      },
+      {
+        id: "blank2",
+        label: "Acto inconsciente del sujeto",
+        correct: "destruya con furia omnipotente",
+        options: [
+          "destruya con furia omnipotente",
+          "idealice de forma perpetua",
+          "someta a castigos morales estrictos",
+          "expulse de su memoria consciente"
+        ]
+      },
+      {
+        id: "blank3",
+        label: "Respuesta indispensable del objeto",
+        correct: "sobreviva intacto a la destrucción",
+        options: [
+          "sobreviva intacto a la destrucción",
+          "retalie con sanciones disciplinarias",
+          "se desvanezca en la nada biológica",
+          "interprete el odio del paciente como culpa"
+        ]
+      }
+    ],
+    rationale: "La destrucción ubica al objeto fuera de la omnipotencia subjetiva. Cuando la madre (o el analista) sobrevive sin contraatacar ni desmoronarse, el infante exclama en su inconsciente: '¡Te destruí y sigues viva, luego no eres un producto de mi alucinación, eres real y puedo usarte!'."
+  },
+  {
+    id: "c12",
+    author: "Donald Winnicott",
+    topic: "Falso Self, Suicidio y Verdadero Self",
+    title: "La tragedia defensiva del Falso Self",
+    instruction: "Completa la articulación entre el gesto espontáneo, el falso self y el suicidio:",
+    template: "El Verdadero Self brota del {blank1} corporal y psicosomático. Cuando la madre impone sus exigencias, surge el Falso Self como coraza protectora; en casos graves, el suicidio se presenta como la trágica destrucción del self total para salvar al Verdadero Self de {blank2} ante una vida sentida como {blank3}.",
+    blanks: [
+      {
+        id: "blank1",
+        label: "Fuente del Verdadero Self",
+        correct: "gesto espontáneo y sensorio-motor",
+        options: [
+          "gesto espontáneo y sensorio-motor",
+          "manual de crianza de los progenitores",
+          "acatamiento de las normas escolares",
+          "discurso racional del principio del deber"
+        ]
+      },
+      {
+        id: "blank2",
+        label: "Propósito del acto suicida",
+        correct: "la traición o aniquilación definitiva",
+        options: [
+          "la traición o aniquilación definitiva",
+          "la pérdida de bienes materiales",
+          "la culpa persecutoria por castración",
+          "la falta de reconocimiento académico"
+        ]
+      },
+      {
+        id: "blank3",
+        label: "Vivencia clínica patológica",
+        correct: "vacía, fútil y no vivida",
+        options: [
+          "vacía, fútil y no vivida",
+          "hiperactiva y sumamente placentera",
+          "plena de vitalidad creativa compartida",
+          "libre de exigencias y en calma"
+        ]
+      }
+    ],
+    rationale: "El Falso Self protege al Verdadero Self manteniéndolo en una vida secreta. Pero cuando el entorno acorrala a la persona obligándola a prostituir sus afectos más íntimos, el suicidio se convierte paradójicamente en el último escudo para evitar la aniquilación final de lo genuino."
+  },
+  {
+    id: "c13",
+    author: "Donald Winnicott",
+    topic: "Capacidad de Estar Solo y el Ser vs Hacer",
+    title: "Estar solo en presencia de la madre",
+    instruction: "Completa la paradoja de la soledad y la primacía del Ser sobre el Hacer:",
+    template: "Para Winnicott, el sentimiento de {blank1} es anterior y condición indispensable para el Hacer. La capacidad de estar solo descansa en la paradoja infantil de haber podido relajarse a solas {blank2}, sabiendo con confianza básica que ella {blank3}.",
+    blanks: [
+      {
+        id: "blank1",
+        label: "Primacía ontológica",
+        correct: "SER (asociado al elemento femenino)",
+        options: [
+          "SER (asociado al elemento femenino)",
+          "HACER (asociado a la acción laboral)",
+          "OBEDECER (asociado a la sumisión social)",
+          "REPRIMIR (asociado a la renuncia pulsional)"
+        ]
+      },
+      {
+        id: "blank2",
+        label: "Paradoja de la soledad",
+        correct: "en presencia no intrusiva de la madre",
+        options: [
+          "en presencia no intrusiva de la madre",
+          "aislado en una habitación en penumbra",
+          "tras romper todo vínculo afectivo familiar",
+          "mediante el castigo por mala conducta"
+        ]
+      },
+      {
+        id: "blank3",
+        label: "Certeza introyectada",
+        correct: "sigue viva y no va a desaparecer",
+        options: [
+          "sigue viva y no va a desaparecer",
+          "castigará severamente cualquier descuido",
+          "exigirá cuentas de las tareas realizadas",
+          "reemplazará su afecto por un objeto inerte"
+        ]
+      }
+    ],
+    rationale: "Solo quien pudo jugar en paz mientras su madre leía o cosía a su lado —sin entrometerse ni exigir nada— aprende a estar verdaderamente solo de adulto: puede descansar en la no-integración sabiendo que el amparo y la continuidad del mundo siguen intactos."
+  }
+];
+
+// FLASHCARDS DE CONCEPTOS CLAVE (28 TARJETAS 3D)
 const FLASHCARDS_DATA = [
-  // --- MELANIE KLEIN ---
+  // --- MELANIE KLEIN (10) ---
   {
     id: "fc1",
     author: "Melanie Klein",
     category: "Edipo Temprano",
     term: "Estadios Tempranos del Edipo",
     tag: "Clase 6",
-    front: "¿Cuándo se originan los estadios tempranos del Edipo según Klein y qué diferencia marca con Freud?",
-    back: "Klein los sitúa entre los 6 meses y los 3 años (en la posición depresiva), mientras Freud los ubicaba entre los 3 y 5 años (fase fálica). Para Klein, el Edipo temprano se asienta en la oralidad y la dinámica ambivalente de amor y odio hacia la madre como objeto total.",
+    front: "¿Cuándo sitúa Melanie Klein el inicio del Edipo y qué diferencia crucial marca con Freud?",
+    back: "Klein los ubica entre los 6 meses y 3 años (en la posición depresiva), mientras Freud los situaba entre los 3 y 5 años (fase fálica). Para Klein, el Edipo temprano se asienta en la oralidad y la dinámica ambivalente hacia la madre como objeto total.",
     mastered: false
   },
   {
     id: "fc2",
     author: "Melanie Klein",
-    category: "Desarrollo Temprano",
+    category: "Prehistoria Edípica",
     term: "Fase Femenina",
     tag: "Clase 6",
-    front: "¿Qué caracteriza a la 'Fase Femenina' descrita por Melanie Klein?",
-    back: "Es un período transversal para niños y niñas, previo a la consolidación del psiquismo masculino o femenino. Predominan fines receptivos y de incorporación oral, caracterizado por una identificación primaria con el objeto materno.",
+    front: "¿En qué consiste la 'Fase Femenina' descripta por Melanie Klein?",
+    back: "Es un período transversal para niñas y niños, anterior a la consolidación del psiquismo masculino o femenino. Se caracteriza por fines receptivos y de incorporación oral, y por una identificación primaria con el objeto materno.",
     mastered: false
   },
   {
     id: "fc3",
     author: "Melanie Klein",
     category: "Edipo Temprano",
-    term: "Relevancia del Destete",
+    term: "El Destete",
     tag: "Clase 6",
-    front: "¿Por qué el destete es el motor del viraje hacia el padre en Klein?",
-    back: "El destete representa la primera separación real y la fisura del estado de fusión. Las frustraciones orales y el odio que suscita despiertan sadismo y ansiedades persecutorias que compelen al bebé a apartarse de la madre y volcarse hacia el padre (pene paterno como objeto oral alternativo).",
+    front: "¿Por qué el destete es el motor primordial del alejamiento de la madre hacia el padre?",
+    back: "El destete representa la primera separación real y la fisura del estado de fusión. Las frustraciones orales y el odio reactivo despiertan sadismo y ansiedades persecutorias que impulsan al infante a buscar un objeto oral alternativo en el pene del padre.",
     mastered: false
   },
   {
@@ -805,7 +1383,7 @@ const FLASHCARDS_DATA = [
     term: "Celos vs Envidia",
     tag: "Clase 6",
     front: "¿Cuál es la distinción clínica entre Celos y Envidia en Klein?",
-    back: "• Celos: Sentimiento triangular (madre-bebé-tercero) con objetos totales; miedo de perder el amor del otro y quedar expuesto al desamparo.\n• Envidia: Vivencia diádica más arcaica; frustración al sentirse privado de lo bueno. Fantasía de atacar, morder y despojar los contenidos del cuerpo materno (pechos, bebés, pene).",
+    back: "• Celos: Sentimiento triangular (madre-bebé-padre) con objetos totales; miedo de perder el amor del otro y quedar en desamparo.\n• Envidia: Vivencia diádica más arcaica; frustración al sentirse privado de lo bueno. Fantasía de atacar, morder y despojar los contenidos del cuerpo materno (pechos, bebés, penes).",
     mastered: false
   },
   {
@@ -814,18 +1392,18 @@ const FLASHCARDS_DATA = [
     category: "Pulsión y Cognición",
     term: "Pulsión Epistemofílica",
     tag: "Clase 6",
-    front: "¿Qué es la pulsión epistemofílica y cuál es su riesgo si la agresión no se modula?",
-    back: "Es la pulsión del saber y la curiosidad. Se articula con el componente sádico primario: investigar proviene de la fantasía de desarmar, cortar y apropiarse de los secretos del cuerpo materno. Si hay culpa excesiva o descontrol agresivo, deriva en inhibiciones severas del aprendizaje escolar e intelectual.",
+    front: "¿Qué es la pulsión epistemofílica y por qué puede derivar en inhibición del aprendizaje?",
+    back: "Es la pulsión del saber y la curiosidad. Se articula con el componente sádico primario: investigar proviene de la fantasía de desarmar, cortar y apropiarse de los secretos del cuerpo materno. Si hay culpa excesiva o agresión incontrolada, deriva en inhibiciones severas del estudio y del aprendizaje escolar.",
     mastered: false
   },
   {
     id: "fc6",
     author: "Melanie Klein",
     category: "Fantasía Inconsciente",
-    term: "Objeto Combinado",
+    term: "Objeto Combinado y Madre Fálica",
     tag: "Clase 6",
     front: "¿Qué es el 'Objeto Combinado' y la figura de la 'Madre Fálica'?",
-    back: "Fantasía arcaica donde la agresividad proyectada une a los padres en un coito sádico, incesante y terrorífico del cual el niño queda excluido. Al no estar bien diferenciados, el pene del padre parece formar parte permanente de la madre (madre fálica), constituyendo la fuente de pesadillas infantiles y delirios persecutorios.",
+    back: "Fantasía arcaica donde la agresividad proyectada une a los padres en un coito sádico continuo e infinito del cual el niño queda excluido. Al no estar bien diferenciados, el pene del padre parece formar parte permanente de la madre (madre fálica), constituyendo la fuente de pesadillas infantiles y delirios persecutorios.",
     mastered: false
   },
   {
@@ -869,7 +1447,7 @@ const FLASHCARDS_DATA = [
     mastered: false
   },
 
-  // --- DONALD WINNICOTT ---
+  // --- DONALD WINNICOTT (18) ---
   {
     id: "fc11",
     author: "Donald Winnicott",
@@ -1052,6 +1630,7 @@ const FLASHCARDS_DATA = [
   }
 ];
 
+// TABLAS COMPARATIVAS
 const COMPARATIVE_TABLES = {
   authors: [
     {
