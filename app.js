@@ -488,9 +488,9 @@
     const progressPct = Math.round((currentNum / total) * 100);
 
     container.innerHTML = `
-      <div class="bg-white rounded-3xl p-6 md:p-8 border-2 border-pink-100 shadow-sm max-w-3xl mx-auto">
+      <div class="bg-white rounded-2xl sm:rounded-3xl p-4 sm:p-6 md:p-8 border-2 border-pink-100 shadow-sm max-w-3xl mx-auto">
         <!-- Top bar -->
-        <div class="flex items-center justify-between pb-4 mb-4 border-b border-pink-50">
+        <div class="flex items-center justify-between pb-3 sm:pb-4 mb-3 sm:mb-4 border-b border-pink-50">
           <button id="btn-back-to-modules" class="inline-flex items-center gap-1.5 text-xs font-bold text-pink-600 hover:text-pink-800 bg-pink-50 hover:bg-pink-100 px-3 py-1.5 rounded-full transition-colors">
             <span>←</span> Volver a Módulos
           </button>
@@ -500,12 +500,12 @@
         </div>
 
         <!-- Barra de progreso -->
-        <div class="w-full bg-pink-50 rounded-full h-2 mb-6 overflow-hidden">
+        <div class="w-full bg-pink-50 rounded-full h-2 mb-4 sm:mb-6 overflow-hidden">
           <div class="bg-gradient-to-r from-pink-400 to-rose-400 h-2 rounded-full transition-all duration-300" style="width: ${progressPct}%"></div>
         </div>
 
         <!-- Etiqueta de tema -->
-        <div class="flex items-center gap-2 mb-3">
+        <div class="flex items-center gap-2 mb-2 sm:mb-3">
           <span class="text-xs font-semibold px-2.5 py-0.5 rounded-md bg-purple-50 text-purple-600 border border-purple-100">
             ${q.theme}
           </span>
@@ -515,20 +515,20 @@
         </div>
 
         <!-- Enunciado -->
-        <h2 class="text-base md:text-lg font-bold text-gray-800 mb-6 leading-relaxed">
+        <h2 class="text-sm sm:text-base md:text-lg font-bold text-gray-800 mb-4 sm:mb-6 leading-relaxed">
           ${q.question}
         </h2>
 
         <!-- Opciones (con longitud equilibrada y diseño uniforme) -->
-        <div class="space-y-3 mb-6" id="options-container">
+        <div class="space-y-2.5 sm:space-y-3 mb-5 sm:mb-6" id="options-container">
           ${q.options.map((opt, idx) => {
             const letter = String.fromCharCode(65 + idx);
             return `
               <button 
-                class="option-item w-full text-left p-4 rounded-2xl border-2 transition-all duration-200 flex items-start gap-3.5 text-sm md:text-base border-gray-100 bg-white hover:border-pink-300 hover:bg-pink-50/40"
+                class="option-item w-full text-left p-3.5 sm:p-4 rounded-xl sm:rounded-2xl border-2 transition-all duration-200 flex items-start gap-2.5 sm:gap-3.5 text-xs sm:text-sm md:text-base border-gray-100 bg-white hover:border-pink-300 hover:bg-pink-50/40"
                 data-option-index="${idx}"
               >
-                <span class="flex-shrink-0 w-7 h-7 rounded-xl font-bold text-xs flex items-center justify-center bg-pink-100 text-pink-700">
+                <span class="flex-shrink-0 w-6 h-6 sm:w-7 sm:h-7 rounded-lg sm:rounded-xl font-bold text-xs flex items-center justify-center bg-pink-100 text-pink-700">
                   ${letter}
                 </span>
                 <span class="text-gray-700 pt-0.5 flex-1 leading-relaxed">${opt}</span>
@@ -1014,15 +1014,15 @@
             `;
           }).join("")}
 
-          <div class="sticky bottom-4 bg-white/95 backdrop-blur-md p-4 rounded-3xl border-2 border-pink-200 shadow-lg flex items-center justify-between gap-4">
+          <div class="sticky bottom-3 sm:bottom-4 bg-white/95 backdrop-blur-md p-3 sm:p-4 rounded-2xl sm:rounded-3xl border-2 border-pink-200 shadow-lg flex flex-col sm:flex-row items-center justify-between gap-2.5 sm:gap-4">
             <span class="text-xs text-gray-600 font-semibold" id="exam-answered-counter">
               Respondidas: ${Object.keys(examAnswers).length} de ${examQuestions.length}
             </span>
-            <div class="flex gap-2">
-              <button type="button" id="btn-reset-exam" class="px-4 py-2 rounded-2xl text-xs font-bold text-pink-700 bg-pink-100 hover:bg-pink-200 transition-colors">
+            <div class="flex items-center gap-2 w-full sm:w-auto justify-end">
+              <button type="button" id="btn-reset-exam" class="flex-1 sm:flex-none px-3.5 py-2 rounded-xl sm:rounded-2xl text-xs font-bold text-pink-700 bg-pink-100 hover:bg-pink-200 transition-colors">
                 Limpiar
               </button>
-              <button type="submit" class="px-6 py-2.5 rounded-2xl text-sm font-bold text-white bg-gradient-to-r from-pink-500 to-rose-400 hover:from-pink-600 hover:to-rose-500 shadow-xs transition-transform active:scale-95">
+              <button type="submit" class="flex-1 sm:flex-none px-5 py-2 rounded-xl sm:rounded-2xl text-xs sm:text-sm font-bold text-white bg-gradient-to-r from-pink-500 to-rose-400 hover:from-pink-600 hover:to-rose-500 shadow-xs transition-transform active:scale-95 whitespace-nowrap">
                 Entregar Solemne 🎓✨
               </button>
             </div>
@@ -1306,64 +1306,64 @@
         </div>
 
         <div id="flashcard-3d" class="flashcard-scene w-full cursor-pointer select-none" style="perspective: 1200px;">
-          <div class="flashcard-inner w-full min-h-[300px] md:min-h-[340px] relative transition-transform duration-500" style="transform-style: preserve-3d; ${cardIsFlipped ? 'transform: rotateY(180deg);' : ''}">
+          <div class="flashcard-inner w-full min-h-[280px] sm:min-h-[320px] md:min-h-[340px] relative transition-transform duration-500" style="transform-style: preserve-3d; ${cardIsFlipped ? 'transform: rotateY(180deg);' : ''}">
             
             <!-- Cara Frontal -->
-            <div class="flashcard-face flashcard-front absolute inset-0 bg-white rounded-3xl p-7 border-2 border-pink-100 shadow-xs flex flex-col justify-between hover:border-pink-300 transition-colors" style="backface-visibility: hidden;">
+            <div class="flashcard-face flashcard-front absolute inset-0 bg-white rounded-2xl sm:rounded-3xl p-5 sm:p-7 border-2 border-pink-100 shadow-xs flex flex-col justify-between hover:border-pink-300 transition-colors" style="backface-visibility: hidden;">
               <div>
-                <div class="flex items-center justify-between mb-4">
-                  <span class="text-xs font-bold px-3 py-1 rounded-full bg-pink-50 text-pink-600 border border-pink-100">
+                <div class="flex items-center justify-between mb-3 sm:mb-4">
+                  <span class="text-xs font-bold px-2.5 py-0.5 sm:px-3 sm:py-1 rounded-full bg-pink-50 text-pink-600 border border-pink-100">
                     ${card.author} • ${card.tag}
                   </span>
-                  <span class="text-xs font-semibold text-purple-600 bg-purple-50 px-2.5 py-0.5 rounded-md border border-purple-100">
+                  <span class="text-xs font-semibold text-purple-600 bg-purple-50 px-2 py-0.5 rounded-md border border-purple-100">
                     ${card.category}
                   </span>
                 </div>
-                <h3 class="text-xl md:text-2xl font-bold text-gray-800 mb-3">${card.term}</h3>
-                <p class="text-sm md:text-base text-gray-600 leading-relaxed">${card.front}</p>
+                <h3 class="text-lg sm:text-xl md:text-2xl font-bold text-gray-800 mb-2 sm:mb-3">${card.term}</h3>
+                <p class="text-xs sm:text-sm md:text-base text-gray-600 leading-relaxed">${card.front}</p>
               </div>
 
-              <div class="pt-4 border-t border-pink-50 flex items-center justify-between text-xs text-pink-400 font-semibold">
+              <div class="pt-3 sm:pt-4 border-t border-pink-50 flex items-center justify-between text-xs text-pink-400 font-semibold">
                 <span>🔄 Toca para voltear tarjeta</span>
-                <span>[Espacio]</span>
+                <span class="hidden sm:inline">[Espacio]</span>
               </div>
             </div>
 
             <!-- Cara Trasera -->
-            <div class="flashcard-face flashcard-back absolute inset-0 bg-gradient-to-br from-white to-pink-50/50 rounded-3xl p-7 border-2 border-pink-200 shadow-xs flex flex-col justify-between" style="backface-visibility: hidden; transform: rotateY(180deg);">
+            <div class="flashcard-face flashcard-back absolute inset-0 bg-gradient-to-br from-white to-pink-50/50 rounded-2xl sm:rounded-3xl p-5 sm:p-7 border-2 border-pink-200 shadow-xs flex flex-col justify-between" style="backface-visibility: hidden; transform: rotateY(180deg);">
               <div>
-                <div class="flex items-center justify-between mb-3">
+                <div class="flex items-center justify-between mb-2.5 sm:mb-3">
                   <span class="text-xs font-bold text-pink-700 uppercase tracking-wider">Concepto Fundamental</span>
                   <span class="text-xs font-semibold text-gray-400">${card.term}</span>
                 </div>
-                <div class="text-sm md:text-base text-gray-800 leading-relaxed space-y-2 whitespace-pre-line font-normal">
+                <div class="text-xs sm:text-sm md:text-base text-gray-800 leading-relaxed space-y-1.5 sm:space-y-2 whitespace-pre-line font-normal">
                   ${card.back}
                 </div>
               </div>
 
-              <div class="pt-4 border-t border-pink-100 flex items-center justify-between text-xs text-pink-500 font-semibold">
+              <div class="pt-3 sm:pt-4 border-t border-pink-100 flex items-center justify-between text-xs text-pink-500 font-semibold">
                 <span>🔄 Toca para volver al frente</span>
-                <span>[Espacio]</span>
+                <span class="hidden sm:inline">[Espacio]</span>
               </div>
             </div>
 
           </div>
         </div>
 
-        <div class="w-full flex items-center justify-between gap-3 mt-6">
-          <button id="btn-fc-prev" class="p-3 rounded-2xl bg-white border border-pink-100 hover:bg-pink-50 text-gray-600 text-sm font-bold shadow-xs transition-colors flex items-center gap-1.5">
-            <span>←</span> Anterior
+        <div class="w-full flex items-center justify-between gap-1.5 sm:gap-3 mt-4 sm:mt-6">
+          <button id="btn-fc-prev" class="p-2 sm:p-3 rounded-xl sm:rounded-2xl bg-white border border-pink-100 hover:bg-pink-50 text-gray-600 text-xs sm:text-sm font-bold shadow-xs transition-colors flex items-center gap-1">
+            <span>←</span> <span class="hidden sm:inline">Anterior</span>
           </button>
 
-          <div class="flex items-center gap-2">
-            <button id="btn-fc-mark-review" class="px-4 py-2.5 rounded-2xl text-xs font-bold transition-all ${
+          <div class="flex items-center gap-1.5 sm:gap-2">
+            <button id="btn-fc-mark-review" class="px-2.5 sm:px-4 py-2 sm:py-2.5 rounded-xl sm:rounded-2xl text-[11px] sm:text-xs font-bold transition-all ${
               !isMastered 
                 ? 'bg-amber-100 text-amber-800 border border-amber-200 shadow-xs' 
                 : 'bg-white text-gray-500 border border-gray-200 hover:bg-amber-50'
             }">
               Repasar 💫
             </button>
-            <button id="btn-fc-mark-master" class="px-4 py-2.5 rounded-2xl text-xs font-bold transition-all ${
+            <button id="btn-fc-mark-master" class="px-2.5 sm:px-4 py-2 sm:py-2.5 rounded-xl sm:rounded-2xl text-[11px] sm:text-xs font-bold transition-all ${
               isMastered 
                 ? 'bg-emerald-500 text-white shadow-xs' 
                 : 'bg-pink-100 text-pink-700 hover:bg-pink-200'
@@ -1372,8 +1372,8 @@
             </button>
           </div>
 
-          <button id="btn-fc-next" class="p-3 rounded-2xl bg-white border border-pink-100 hover:bg-pink-50 text-gray-600 text-sm font-bold shadow-xs transition-colors flex items-center gap-1.5">
-            Siguiente <span>→</span>
+          <button id="btn-fc-next" class="p-2 sm:p-3 rounded-xl sm:rounded-2xl bg-white border border-pink-100 hover:bg-pink-50 text-gray-600 text-xs sm:text-sm font-bold shadow-xs transition-colors flex items-center gap-1">
+            <span class="hidden sm:inline">Siguiente</span> <span>→</span>
           </button>
         </div>
       </div>
